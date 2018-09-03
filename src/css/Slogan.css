@@ -1,0 +1,55 @@
+.capa-site {
+  opacity: 0.5;
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slogan {
+  font-family: "Anton", sans-serif;
+  position: relative;
+  bottom: 32em;
+  height: 0.8em;
+}
+.text-shadown {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.sub-slogan {
+  color: #424242 !important;
+  font-family: Anton, sans-serif;
+  line-height: 126%;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.sub-slogan h3 {
+  font-size: 2em;
+}
+.text-about {
+  line-height: 1.5;
+  font-size: 2em;
+}
+
+.center-align h1 {
+  font-size: 10em;
+}
+
+@media screen and (max-width: 600px) {
+  .slogan h1 {
+    font-size: 6em;
+  }
+  .slogan {
+    bottom: 30em;
+  }
+  .sub-slogan {
+    font-size: 1.4em;
+  }
+  .text-about {
+    text-align: justify;
+    font-size: 1.2em;
+  }
+  .parallax img {
+    width: 36em;
+  }
+}

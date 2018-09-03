@@ -1,0 +1,10 @@
+.image-home {
+  border-radius: 100%;
+  margin: 1.5em 0.5em;
+  height: 15em;
+  width: 15em;
+  background-position-y: 3.5em;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(91, 99, 208, 0.186);
+}

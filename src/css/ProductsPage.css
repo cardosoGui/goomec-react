@@ -1,0 +1,164 @@
+.modal {
+  font-family: Josefin Sans, sans-serif;
+  margin-top: -2em;
+  max-height: 85%;
+}
+.modal.modal-fixed-footer {
+  width: 90%;
+  height: 90%;
+}
+.text-details {
+  margin: 2em;
+}
+.text-products {
+  text-align: left;
+}
+.products {
+  display: flex;
+  justify-content: flex-end;
+  height: 35em;
+}
+.no-repeat-background {
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+.content-block {
+  border-radius: 0.5em 0.5em;
+  border: 1px outset rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.55);
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.55);
+}
+
+/* Alinhadores */
+.kmc-3d-expert-view {
+  background-image: url("../img/Products/images/kmc_3d_expert.jpg");
+}
+.kmc-3d-efficient-view {
+  background-image: url("../img/Products/images/kmc_3d_efficient.jpg");
+}
+.kmc-3d-compact-view {
+  background-image: url("../img/Products/images/kmc_3d_compact.jpg");
+}
+
+/* Rampas */
+.kmc-10p-view {
+  background-image: url("../img/Products/images/kmc_10p.jpg");
+}
+.kmc-12p-view {
+  background-image: url("../img/Products/images/kmc_12p_eb.jpg");
+}
+
+.kmc-13p-view {
+  background-image: url("../img/Products/images/kmc_13p.jpg");
+}
+.kmc-20hd-view {
+  background-image: url("../img/Products/images/kmc_20hd.jpg");
+}
+/* Base de Alinhamento */
+
+.kmc-18p-view {
+  background-image: url("../img/Products/images/kmc_18p.jpg");
+}
+.kmc-18p-flex-view {
+  background-image: url("../img/Products/images/kmc_18p_flex.jpg");
+}
+/* Elevadores  */
+.kmc-r-4000s-view {
+  background-image: url("../img/Products/images/kmc_r4000s.jpg");
+}
+.kmc-r-4000-view {
+  background-image: url("../img/Products/images/kmc_r4000.jpg");
+}
+.kmc-r-4000d-view {
+  background-image: url("../img/Products/images/kmc_r4000d.jpg");
+}
+.kmc-r-4000e-view {
+  background-image: url("../img/Products/images/kmc_r4000e.jpg");
+}
+.kmc-r-4000p-view {
+  background-image: url("../img/Products/images/kmc_r4000p.jpg");
+}
+.kmc-r-2500-view {
+  background-image: url("../img/Products/images/kmc_r2500.jpg");
+}
+.kmc-r-3000d-view {
+  background-image: url("../img/Products/images/kmc_r3000d.jpg");
+}
+/* Balanceadoras */
+
+.kmc-9000-r-view {
+  background-image: url("../img/Products/images/kmc_9000r.jpg");
+}
+.kmc-2100-r-view {
+  background-image: url("../img/Products/images/kmc_2100r.jpg");
+}
+.kmc-2100-r-view {
+  background-image: url("../img/Products/images/kmc_2100r_ultra.jpg");
+}
+.kmc-1800-r-view {
+  background-image: url("../img/Products/images/kmc_1800r.jpg");
+}
+.kmc-18p-view {
+  background-image: url("../img/Products/images/kmc_18p.jpg");
+}
+.kmc-18p-flex-view {
+  background-image: url("../img/Products/images/kmc_18p_flex.jpg");
+}
+.kmc-3000-r-view {
+  background-image: url("../img/Products/images/kmc_3000r.jpg");
+}
+/* Desmontadoras */
+.kmc-r-1500-view {
+  background-image: url("../img/Products/images/kmc_1500r.jpg");
+}
+.kmc-r-1500-ultra-view {
+  background-image: url("../img/Products/images/kmc_1500r_ultra.jpg");
+}
+/* Acessórios */
+.kmc-acessorio-view {
+  background-image: url("../img/Products/images/kmc_acs_valeta.jpg");
+}
+.kmc-macaoo-pneumatico-view {
+  background-image: url("../img/Products/images/kmc_macaco_pneumatico.jpg");
+}
+/* Linha Pesada */
+.kmc-3090-truck-view {
+  background-image: url("../img/Products/images/kmc_3090_pesada.jpg");
+}
+.categories-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .modal .modal-content {
+    padding: 0.5em;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .products {
+    height: 19em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  h5 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+    font-size: 1em;
+  }
+  .no-repeat-background {
+    background-size: 230px;
+  }
+  .btn {
+    font-size: smaller;
+  }
+}

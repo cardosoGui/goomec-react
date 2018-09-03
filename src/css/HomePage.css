@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px) {
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .sub-slogan h2 {
+    font-size: 2em;
+  }
+}
