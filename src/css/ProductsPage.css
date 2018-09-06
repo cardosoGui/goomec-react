@@ -39,8 +39,26 @@
 .kmc-3d-compact-view {
   background-image: url("../img/Products/images/kmc_3d_compact.jpg");
 }
+.kmc-flex-full-view {
+  background-image: url("../img/Products/images/kmc_flex_full.jpg");
+}
+.kmc-flex-pesada-view {
+  background-image: url("../img/Products/images/kmc_flex_pesada.jpg");
+}
+.kmc-flex-standard-view {
+  background-image: url("../img/Products/images/kmc_flex_standard.jpg");
+}
+.kmc-flex-std-pesada-view {
+  background-image: url("../img/Products/images/kmc_flex_std_pesada.jpg");
+}
+.kmc-flex-pesada-sem-carreta-view {
+  background-image: url("../img/Products/images/kmc_flex_pesada_sem_carreta.jpg");
+}
 
 /* Rampas */
+.kmc-hd-view {
+  background-image: url("../img/Products/images/kmc_hd.jpg");
+}
 .kmc-10p-view {
   background-image: url("../img/Products/images/kmc_10p.jpg");
 }
@@ -92,9 +110,10 @@
 .kmc-2100-r-view {
   background-image: url("../img/Products/images/kmc_2100r.jpg");
 }
-.kmc-2100-r-view {
+.kmc-2100-r-ultra-view {
   background-image: url("../img/Products/images/kmc_2100r_ultra.jpg");
 }
+
 .kmc-1800-r-view {
   background-image: url("../img/Products/images/kmc_1800r.jpg");
 }
@@ -114,6 +133,31 @@
 .kmc-r-1500-ultra-view {
   background-image: url("../img/Products/images/kmc_1500r_ultra.jpg");
 }
+.kmc-r-906-view {
+  background-image: url("../img/Products/images/kmc_906r.jpg");
+}
+.kmc-r-960-view {
+  background-image: url("../img/Products/images/kmc_960r.jpg");
+}
+.kmc-r-1200-view {
+  background-image: url("../img/Products/images/kmc_1200r.jpg");
+}
+.kmc-r-2100-view {
+  background-image: url("../img/Products/images/kmc_2100r_ultra.jpg");
+}
+.kmc-pm-3030-view {
+  background-image: url("../img/Products/images/kmc_3030pm.jpg");
+}
+.kmc-r-4050-view {
+  background-image: url("../img/Products/images/kmc_4050r.jpg");
+}
+.kmc-r-6000-view {
+  background-image: url("../img/Products/images/kmc_6000_wifi.jpg");
+}
+.kmc-r-8000-view {
+  background-image: url("../img/Products/images/kmc_8000_wifi.jpg");
+}
+
 /* Acessórios */
 .kmc-acessorio-view {
   background-image: url("../img/Products/images/kmc_acs_valeta.jpg");
@@ -131,7 +175,7 @@
 }
 @media screen and (max-width: 3000px) {
   .products {
-    height: 200%;
+    height: 115em;
   }
 }
 @media screen and (max-width: 2000px) {
@@ -139,12 +183,12 @@
     padding: 0.5em;
   }
   .products {
-    height: 180%;
+    height: 90em;
   }
 }
 @media screen and (max-width: 1500px) {
   .products {
-    height: 160%;
+    height: 60em;
   }
 }
 
@@ -153,7 +197,7 @@
     padding: 0.5em;
   }
   .products {
-    height: 130%;
+    height: 40em;
   }
 }
 

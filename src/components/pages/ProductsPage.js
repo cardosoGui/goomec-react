@@ -107,6 +107,84 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
+              <Tab title="KMC FLEX II FULL">
+                <Col s={12}>
+                  <div className="row">
+                    <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC FLEX II FULL"
+                      className="products kmc-flex-full-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC FLEX II STRONGER">
+                <Col s={12}>
+                  <div className="row">
+                    <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC FLEX II STRONGER"
+                      className="products kmc-flex-pesada-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+
+              <Tab title="KMC FLEX II DEFINITY">
+                <Col s={12}>
+                  <div className="row">
+                    <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC FLEX II DEFINITY"
+                      className="products kmc-flex-pesada-sem-carreta-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              {/* Incompleto */}
+              <Tab title="KMC FLEX II STANDARD">
+                <Col s={12}>
+                  <div className="row">
+                    <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC FLEX II STRONGER"
+                      className="products kmc-flex-pesada-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
             </Tabs>
           </Modal>
         </Col>
@@ -128,7 +206,24 @@ const ProductsPage = () => (
             }
           >
             <Tabs className="tab-demo z-depth-1">
-              <Tab title="KMC 10p" active>
+              <Tab title="KMC hd" active>
+                <Col s={12}>
+                  <div className="row">
+                    <h5>RAMPA HIDRÁULICA PANTOGRÁFICA</h5>
+                    <p>
+                      Atende à todos os veículos de passeio, caminhonetes, SUVs
+                      e vans (inclusive alongadas)
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC HD"
+                      className="products kmc-hd-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 10p">
                 <Col s={12}>
                   <div className="row">
                     <h5>RAMPA PNEUMÁTICA 1,10 MT (ALTURA)</h5>
@@ -145,6 +240,41 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
+              <Tab title="KMC 12p">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>RAMPA PNEUMÁTICA 1,15 MT (ALTURA)</h5>
+                    <p>
+                      Atende à todos os veículos de passeio, caminhonetes, SUVs
+                      e vans (inclusive alongadas)
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 12p"
+                      className="products kmc-12p-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 20hd">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>RAMPA HIDRÁULICA PANTOGRÁFICA</h5>
+                    <p>
+                      Atende à todos os veículos de passeio, caminhonetes, SUVs
+                      e vans (inclusive alongadas)
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 20HD"
+                      className="products kmc-20hd-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+
               <Tab title="KMC 13p">
                 <Col s={12}>
                   <div className="row">
@@ -204,6 +334,27 @@ const ProductsPage = () => (
                     <div
                       alt="KMC 18p"
                       className="products kmc-18p-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 18p Flex">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BASE DE ALINHAMENTO PARA UTILIZAÇÃO COM ELEVADOR</h5>
+                    <p>
+                      Pratico e maleável ocupa pouco espaço possibilitando o
+                      serviço de alinhamento automotivo em locais que não
+                      possibilitam a instalação de rampa pneumática,
+                      transformando o box de elevador em um box de alinhamento.
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 18p Flex"
+                      className="products kmc-18p-flex-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
@@ -295,7 +446,7 @@ const ProductsPage = () => (
             }
           >
             <Tabs className="tab-demo z-depth-1">
-              <Tab title="KMC 9000 R" active>
+              <Tab title="KMC 1800R" active>
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
@@ -306,13 +457,47 @@ const ProductsPage = () => (
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
-                      alt="KMC 9000 R"
-                      className="products kmc-9000-r-view no-repeat-background materialboxed"
+                      alt="KMC 1800R"
+                      className="products kmc-1800-r-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 3000 R">
+              <Tab title="KMC 2100R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BALANCEADORA MOTORIZADA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 2100R"
+                      className="products kmc-2100-r-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 2100R ULTRa">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BALANCEADORA MOTORIZADA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 2100R ULTRA"
+                      className="products kmc-2100-r-ultra-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 3000R">
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
@@ -329,7 +514,7 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 2100 R">
+              <Tab title="KMC 3090R">
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
@@ -340,13 +525,13 @@ const ProductsPage = () => (
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
-                      alt="KMC 2100 R"
-                      className="products kmc-2100-r-view no-repeat-background materialboxed"
+                      alt="KMC 3090R"
+                      className="products kmc-3090-truck-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 1800 R">
+              <Tab title="KMC 4050R">
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
@@ -357,8 +542,59 @@ const ProductsPage = () => (
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
-                      alt="KMC 1800 R"
-                      className="products kmc-1800-r-view no-repeat-background materialboxed"
+                      alt="KMC 4050R"
+                      className="products kmc-r-4050-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 6000R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BALANCEADORA MOTORIZADA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 6000R"
+                      className="products kmc-r-6000-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 8000R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BALANCEADORA MOTORIZADA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 8000R"
+                      className="products kmc-r-8000-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 9000R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>BALANCEADORA MOTORIZADA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 9000R"
+                      className="products kmc-9000-r-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
@@ -388,7 +624,7 @@ const ProductsPage = () => (
             }
           >
             <Tabs className="tab-demo z-depth-1">
-              <Tab title="KMC R 1500" active>
+              <Tab title="KMC 906R" active>
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
@@ -399,8 +635,110 @@ const ProductsPage = () => (
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
-                      alt="KMC R 1500"
+                      alt="KMC 906r"
+                      className="products kmc-r-906-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 960R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 960R"
+                      className="products kmc-r-960-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 1200R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 1200R"
+                      className="products kmc-r-1200-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 1500R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 1500R"
                       className="products kmc-r-1500-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 1500R ULTRA" active>
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 1500R ULTRA"
+                      className="products kmc-r-1500-ultra-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 2100R">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 2100R"
+                      className="products kmc-r-2100-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 3030PM">
+                <Col s={12}>
+                  <div className="row">
+                    <h5>DESMONTADORA</h5>
+                    <p>
+                      Solução ideal para Oficinas Mecânica, com fácil manuseio
+                      otimiza espaço e processo de alinhamento.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 3030PM"
+                      className="products kmc-pm-3030-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
