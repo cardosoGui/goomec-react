@@ -127,8 +127,8 @@ class ContactPage extends React.Component {
                 <Preloader size="big" />
               </Col>
             ) : (
-              ""
-            )}
+                ""
+              )}
             <Col className="center-align" s={12} m={12}>
               <Button className="blue" large type="submit">
                 Enviar

@@ -1,3 +1,21 @@
+.fixed-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 2em 2em; 
+}
+
+.item{
+  display: block;
+  transition: .25s;
+  color: #26a69a;
+}
+.item:hover{
+  
+  background-color: #218a7f41;
+}
+
+
 @media screen and (max-width: 992px) {
 }
 
@@ -6,4 +24,8 @@
   .sub-slogan h2 {
     font-size: 2em;
   }
+  
+ 
 }
+
+
