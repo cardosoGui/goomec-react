@@ -55,7 +55,8 @@ const AboutPage = () => (
         </div>
       </div>
     </Row>
-    <Row>
+    
+    {/* <Row>
       <Col className="offset-s1 offset-m1" s={10} m={6}>
         <div className="text-header">
           <h4>Motivações</h4>
@@ -107,7 +108,7 @@ const AboutPage = () => (
           </Button>
         </Link>
       </Col>
-    </Row>
+    </Row> */}
   </div>
 );
 
