@@ -18,7 +18,7 @@ class Form extends React.Component {
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
-    const radio = document.getElementById("radio").value;
+    const checkbox = document.getElementById("checkbox").value;
 
     if ((name && email && message && phone) !== "") {
       axios(
@@ -31,7 +31,7 @@ class Form extends React.Component {
             email: email,
             phone: phone,
             message: message,
-            radio: radio
+            checkbox: checkbox
           }
         },
         this.setState({ loading: true })
@@ -120,9 +120,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="Alinhadores"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Alinhadores"
                       label="Alinhadores"
                     />
@@ -130,9 +130,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="Rampas"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Rampas"
                       label="Rampas"
                     />
@@ -140,9 +140,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Base de Alinhamento"
                       label="Base de Alinhamento"
                     />
@@ -150,9 +150,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Elevadores"
                       label="Elevadores"
                     />
@@ -160,9 +160,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Balanceadoras"
                       label="Balanceadoras"
                     />
@@ -170,9 +170,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Desmontadoras"
                       label="Desmonstadoras"
                     />
@@ -180,9 +180,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Acessórios"
                       label="Acessórios"
                     />
@@ -190,9 +190,9 @@ class Form extends React.Component {
                       s={2}
                       m={3}
                       l={3}
-                      id="radio"
+                      id="checkbox"
                       name="group1"
-                      type="radio"
+                      type="checkbox"
                       value="Linha Pesada"
                       label="Linha Pesada"
                     />

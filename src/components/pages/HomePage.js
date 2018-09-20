@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   Row,
   Col,
@@ -48,104 +49,113 @@ class HomePage extends React.Component {
   };
   render() {
     return (
-      <div className="center-align josefin-font">
-        <Col s={10} m={12} l={12}>
-          <Slogan title={"GOOMEC"} image={carSlogan} />
-        </Col>
-        <Row>
-          <Col className="sub-slogan" s={12} m={12} l={12}>
-            <h2>
-              SUA PLATAFORMA DE CONTEÚDO AUTOMOTIVO
+      <div>
+        <Helmet>
+          <title> GooMec | Alinhadores, Balanceadoras</title>
+          <meta
+            name="description"
+            content="Plataforma de conteúdo automotivo, especializada em divulgação produtos e ferramentas mecânicas para o centro automotivo"
+          />
+          <meta name="theme-color" content="#008f68" />
+        </Helmet>
+        <div className="center-align josefin-font">
+          <Col s={10} m={12} l={12}>
+            <Slogan title={"GOOMEC"} image={carSlogan} />
+          </Col>
+          <Row>
+            <Col className="sub-slogan" s={12} m={12} l={12}>
+              <h2>
+                SUA PLATAFORMA DE CONTEÚDO AUTOMOTIVO
+                <br />
+              </h2>
+              <div>
+                {/* onTypingDone={this.done} Para loop */}
+                {this.state.typing ? (
+                  <div>
+                    <Typist>
+                      <span>SOLUÇÕES INTELIGENTES PARA SUA OFICINA</span>
+                      <Typist.Backspace count={11} delay={3000} />
+                      <Typist.Delay ms={3000} />
+                      <br />
+                      <span className="color-text-goomec">
+                        O CENTRO AUTOMOTIVO
+                      </span>
+                      <Typist.Delay ms={3000} />
+                      <br />
+                      <span className="color-text-goomec">O MECÂNICO</span>
+                      <Typist.Delay ms={3000} />
+                      <br />
+                      <span className="color-text-goomec">VOCÊ</span>
+                    </Typist>
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
+            </Col>
+          </Row>
+          <Slogan
+            title="Sobre a GooMec"
+            image={
+              "https://firebasestorage.googleapis.com/v0/b/pwa-experiment-eb2bd.appspot.com/o/img%2FBackground%2Fcapa.jpg?alt=media&token=0aaa9fc2-483c-445f-9a16-395d6ce8d671"
+            }
+            content="Com mais de 30 anos de experiência no segmento automotivo, e a sua juventude com um mundo de tecnologia, queremos criar um universo de experiência atrelado a modernidade e praticidade. Nosso projeto surgiu, com a visão de ajudar o empresário do setor automotivo."
+          />
+          <div className="divider" />
+          <Row>
+            <Col m={2}>Distribuidor Oficial:</Col>
+            <Col m={8}>
               <br />
-            </h2>
-            <div>
-              {/* onTypingDone={this.done} Para loop */}
-              {this.state.typing ? (
+              <img src={logo} width="150px" />
+            </Col>
+            {/* <Col m={4}>Seja parceiro</Col> */}
+          </Row>
+          <div className="divider" />
+          <Row>
+            <Col className="center-align" offset=" m4" s={12} m={4}>
+              <h3>Monte sua oficina:</h3>
+            </Col>
+            <Col s={12} m={12}>
+              <Carousel>
                 <div>
-                  <Typist>
-                    <span>SOLUÇÕES INTELIGENTES PARA SUA OFICINA</span>
-                    <Typist.Backspace count={11} delay={3000} />
-                    <Typist.Delay ms={3000} />
-                    <br />
-                    <span className="color-text-goomec">
-                      O CENTRO AUTOMOTIVO
-                    </span>
-                    <Typist.Delay ms={3000} />
-                    <br />
-                    <span className="color-text-goomec">O MECÂNICO</span>
-                    <Typist.Delay ms={3000} />
-                    <br />
-                    <span className="color-text-goomec">VOCÊ</span>
-                  </Typist>
+                  <SlideItem title="Alinhadores" thumbnail={alinhadores} />
                 </div>
-              ) : (
-                ""
-              )}
-            </div>
-          </Col>
-        </Row>
-        <Slogan
-          title="Sobre a GooMec"
-          image={
-            "https://firebasestorage.googleapis.com/v0/b/pwa-experiment-eb2bd.appspot.com/o/img%2FBackground%2Fcapa.jpg?alt=media&token=0aaa9fc2-483c-445f-9a16-395d6ce8d671"
-          }
-          content="Com mais de 30 anos de experiência no segmento automotivo, e a sua juventude com um mundo de tecnologia, queremos criar um universo de experiência atrelado a modernidade e praticidade. Nosso projeto surgiu, com a visão de ajudar o empresário do setor automotivo."
-        />
-        <div className="divider" />
-        <Row>
-          <Col m={2}>Distribuidor Oficial:</Col>
-          <Col m={8}>
-            <br />
-            <img src={logo} width="150px" />
-          </Col>
-          {/* <Col m={4}>Seja parceiro</Col> */}
-        </Row>
-        <div className="divider" />
-        <Row>
-          <Col className="center-align" offset=" m4" s={12} m={4}>
-            <h3>Monte sua oficina:</h3>
-          </Col>
-          <Col s={12} m={12}>
-            <Carousel>
-              <div>
-                <SlideItem title="Alinhadores" thumbnail={alinhadores} />
-              </div>
-              <div>
-                <SlideItem title="Rampas" thumbnail={rampas} />
-              </div>
-              <div>
-                <SlideItem
-                  title="Base de Alinhamento"
-                  thumbnail={baseAlinhamento}
-                />
-              </div>
-              <div>
-                <SlideItem title="Elevadores" thumbnail={elevadores} />
-              </div>
-              <div>
-                <SlideItem title="Balanceadoras" thumbnail={balanceadoras} />
-              </div>
-              <div>
-                <SlideItem
-                  title="Desmontadoras de Pneus"
-                  thumbnail={desmontadoras}
-                />
-              </div>
-              <div>
-                <SlideItem title="Acessórios" thumbnail={acessorios} />
-              </div>
-              <div>
-                <SlideItem title="Linha Pesada" thumbnail={linhaPesada} />
-              </div>
-            </Carousel>
+                <div>
+                  <SlideItem title="Rampas" thumbnail={rampas} />
+                </div>
+                <div>
+                  <SlideItem
+                    title="Base de Alinhamento"
+                    thumbnail={baseAlinhamento}
+                  />
+                </div>
+                <div>
+                  <SlideItem title="Elevadores" thumbnail={elevadores} />
+                </div>
+                <div>
+                  <SlideItem title="Balanceadoras" thumbnail={balanceadoras} />
+                </div>
+                <div>
+                  <SlideItem
+                    title="Desmontadoras de Pneus"
+                    thumbnail={desmontadoras}
+                  />
+                </div>
+                <div>
+                  <SlideItem title="Acessórios" thumbnail={acessorios} />
+                </div>
+                <div>
+                  <SlideItem title="Linha Pesada" thumbnail={linhaPesada} />
+                </div>
+              </Carousel>
 
-            <Button className="blue" node="a" href="/produtos" large>
-              Produtos
-            </Button>
-          </Col>
-        </Row>
-        <div className="divider" />
-        {/* <Row>
+              <Button className="blue" node="a" href="/produtos" large>
+                Produtos
+              </Button>
+            </Col>
+          </Row>
+          <div className="divider" />
+          {/* <Row>
                     <Col className="center-align offset-s2 offset-m4" s={8} m={4}>
                         <h3>Conteúdo</h3>
                     </Col>
@@ -191,173 +201,174 @@ class HomePage extends React.Component {
                         </Slider>
                     </Col>
                 </Row> */}
-        <Row style={{ height: "55em" }}>
-          <Col offset="s1 m1 l1" s={10} m={4} l={4}>
-            <div className="text-header">
-              <h4>Motivações</h4>
-            </div>
-            <div className="text-content">
-              <h5 className="center-align">
-                Equipamentos para o seu
-                <span span className="blue-text text-darken-2">
-                  {" "}
-                  Centro Automotivo.{" "}
-                </span>
-                com tecnologia de ponta, 100% nacional. Parcele sua compras com
-                cartão BNDES
-              </h5>
-              <h5 className="center-align">
-                Otimize seu serviço, aumentando sua produtividade. Conheça a
-                linha de produtos KMC:
-              </h5>
+          <Row style={{ height: "55em" }}>
+            <Col offset="s1 m1 l1" s={10} m={4} l={4}>
+              <div className="text-header">
+                <h4>Motivações</h4>
+              </div>
+              <div className="text-content">
+                <h5 className="center-align">
+                  Equipamentos para o seu
+                  <span span className="blue-text text-darken-2">
+                    {" "}
+                    Centro Automotivo.{" "}
+                  </span>
+                  com tecnologia de ponta, 100% nacional. Parcele sua compras
+                  com cartão BNDES
+                </h5>
+                <h5 className="center-align">
+                  Otimize seu serviço, aumentando sua produtividade. Conheça a
+                  linha de produtos KMC:
+                </h5>
+                <br />
+                <h4>
+                  <Collection>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 3D EXPERT",
+                            divClassName:
+                              "products kmc-3d-expert-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Alinhadores
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC HD",
+                            divClassName:
+                              "products kmc-hd-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Rampas
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 18p",
+                            divClassName:
+                              "products kmc-18p-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Base de Alinhamento
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC R 4500S",
+                            divClassName:
+                              "products kmc-r-4000s-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Elevadores
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 1800R",
+                            divClassName:
+                              "products kmc-1800-r-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Balanceadoras
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 906R",
+                            divClassName:
+                              "products kmc-r-906-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Desmontadoras
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "CONJUNTO PARA VALETA",
+                            divClassName:
+                              "products kmc-acessorio-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Acessórios
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 3090 TRUCK",
+                            divClassName:
+                              "products kmc-3090-truck-view  no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Linha Pesada
+                      </CollectionItem>
+                    </Link>
+                  </Collection>
+                </h4>
+              </div>
+            </Col>
+
+            <Col offset="s1 l1" s={10} m={5} l={5}>
+              <h4>{this.state.title}</h4>
+              <a href="/produtos">
+                <div className={this.state.divClassName} />
+              </a>
+            </Col>
+
+            <Modal
+              fixedFooter
+              trigger={
+                <Button className="fixed-button red" waves fixed large>
+                  Anuncie Aqui
+                </Button>
+              }
+            >
               <br />
-              <h4>
-                <Collection>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC 3D EXPERT",
-                          divClassName:
-                            "products kmc-3d-expert-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Alinhadores
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC HD",
-                          divClassName:
-                            "products kmc-hd-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Rampas
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC 18p",
-                          divClassName:
-                            "products kmc-18p-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Base de Alinhamento
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC R 4500S",
-                          divClassName:
-                            "products kmc-r-4000s-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Elevadores
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC 1800R",
-                          divClassName:
-                            "products kmc-1800-r-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Balanceadoras
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC 906R",
-                          divClassName:
-                            "products kmc-r-906-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Desmontadoras
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "CONJUNTO PARA VALETA",
-                          divClassName:
-                            "products kmc-acessorio-view no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Acessórios
-                    </CollectionItem>
-                  </Link>
-                  <Link to="/">
-                    <CollectionItem
-                      className="item"
-                      onClick={() => {
-                        this.setState({
-                          title: "KMC 3090 TRUCK",
-                          divClassName:
-                            "products kmc-3090-truck-view  no-repeat-background materialboxed"
-                        });
-                      }}
-                    >
-                      Linha Pesada
-                    </CollectionItem>
-                  </Link>
-                </Collection>
-              </h4>
-            </div>
-          </Col>
-
-          <Col offset="s1 l1" s={10} m={5} l={5}>
-            <h4>{this.state.title}</h4>
-            <Link to="/produtos">
-              <div className={this.state.divClassName} />
-            </Link>
-          </Col>
-
-          <Modal
-            fixedFooter
-            trigger={
-              <Button className="fixed-button red" waves fixed large>
-                Anuncie Aqui
-              </Button>
-            }
-          >
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2 className="center-align text-anuncio">
-              Quer saber como anunciar seu produto?
-            </h2>
-            <br />
-            <br />
-            <br />
-            <Form />
-          </Modal>
-        </Row>
+              <br />
+              <br />
+              <br />
+              <h2 className="center-align text-anuncio">
+                Quer saber como anunciar seu produto?
+              </h2>
+              <br />
+              <br />
+              <br />
+              <Form />
+            </Modal>
+          </Row>
+        </div>
       </div>
     );
   }
