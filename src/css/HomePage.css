@@ -1,31 +1,51 @@
 .fixed-button {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
-  border-radius: 2em 2em; 
+  bottom: 3%;
+  right: 1%;
+  border-radius: 2em 2em;
+}
+.qualidade {
+  background-image: url("../img/Logo/selo_qualidade.png");
+  background-size: 40%;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  height: 35.5em;
 }
 
-.item{
+.item {
   display: block;
-  transition: .25s;
+  transition: 0.25s;
   color: #26a69a;
 }
-.item:hover{
-  
+.item:hover {
   background-color: #218a7f41;
 }
 
-
 @media screen and (max-width: 992px) {
+  .fixed-button {
+    opacity: 0.7;
+  }
+  .fixed-button:hover {
+    opacity: 1;
+  }
+  .text-anuncio {
+    font-size: 1.5em;
+  }
 }
 
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
+  .fixed-button {
+    opacity: 0.7;
+  }
+  .fixed-button:hover {
+    opacity: 1;
+  }
   .sub-slogan h2 {
     font-size: 2em;
   }
-  
- 
+  .text-anuncio {
+    font-size: 1.5em;
+  }
 }
-
-

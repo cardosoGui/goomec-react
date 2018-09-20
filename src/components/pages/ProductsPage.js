@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Tabs, Tab, Modal, Button } from "react-materialize";
 import Slogan from "../utils/Slogan";
+import Form from "../utils/Form"
 
 import "../../css/ProductsPage.css";
 
@@ -185,6 +186,44 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
+              <Tab title="KMC 6000R">
+                <Col s={12}>
+                  <div className="row">
+                        <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 6000R"
+                      className="products kmc-r-6000-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
+              <Tab title="KMC 8000R">
+                <Col s={12}>
+                  <div className="row">
+                        <p>
+                      Apresentamos as melhores máquinas para geometria
+                      automotiva do mercado, somos a KMC do Brasil. Nossa
+                      empresa é formada por profissionais com mais de 40 anos de
+                      experiência e desenvolvemos soluções para oficinas,
+                      concessionárias e autocenters.
+                    </p>
+                  </div>
+                  <Col s={12} m={12} l={12}>
+                    <div
+                      alt="KMC 8000R"
+                      className="products kmc-r-8000-view no-repeat-background materialboxed"
+                    />
+                  </Col>
+                </Col>
+              </Tab>
             </Tabs>
           </Modal>
         </Col>
@@ -321,14 +360,7 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BASE DE ALINHAMENTO PARA UTILIZAÇÃO COM ELEVADOR</h5>
-                    <p>
-                      Pratico e maleável ocupa pouco espaço possibilitando o
-                      serviço de alinhamento automotivo em locais que não
-                      possibilitam a instalação de rampa pneumática,
-                      transformando o box de elevador em um box de alinhamento.
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
+                    
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -342,14 +374,7 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BASE DE ALINHAMENTO PARA UTILIZAÇÃO COM ELEVADOR</h5>
-                    <p>
-                      Pratico e maleável ocupa pouco espaço possibilitando o
-                      serviço de alinhamento automotivo em locais que não
-                      possibilitam a instalação de rampa pneumática,
-                      transformando o box de elevador em um box de alinhamento.
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
+                   
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -388,10 +413,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>ELEVADOR DE COLUNA HIDRÁULICO</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -405,10 +426,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>ELEVADOR DE COLUNA HIDRÁULICO</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -450,10 +467,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -467,10 +480,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -480,31 +489,11 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 2100R ULTRa">
-                <Col s={12}>
-                  <div className="row">
-                    <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
-                  </div>
-                  <Col s={12} m={12} l={12}>
-                    <div
-                      alt="KMC 2100R ULTRA"
-                      className="products kmc-2100-r-ultra-view no-repeat-background materialboxed"
-                    />
-                  </Col>
-                </Col>
-              </Tab>
+           
               <Tab title="KMC 3000R">
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -518,10 +507,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -535,10 +520,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -548,48 +529,11 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 6000R">
-                <Col s={12}>
-                  <div className="row">
-                    <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
-                  </div>
-                  <Col s={12} m={12} l={12}>
-                    <div
-                      alt="KMC 6000R"
-                      className="products kmc-r-6000-view no-repeat-background materialboxed"
-                    />
-                  </Col>
-                </Col>
-              </Tab>
-              <Tab title="KMC 8000R">
-                <Col s={12}>
-                  <div className="row">
-                    <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
-                  </div>
-                  <Col s={12} m={12} l={12}>
-                    <div
-                      alt="KMC 8000R"
-                      className="products kmc-r-8000-view no-repeat-background materialboxed"
-                    />
-                  </Col>
-                </Col>
-              </Tab>
+              
               <Tab title="KMC 9000R">
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -628,10 +572,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -645,10 +585,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -662,10 +598,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -679,10 +611,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -696,10 +624,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -709,19 +633,16 @@ const ProductsPage = () => (
                   </Col>
                 </Col>
               </Tab>
-              <Tab title="KMC 2100R">
+           
+              <Tab title="KMC 2100R ULTRa">
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
-                      alt="KMC 2100R"
-                      className="products kmc-r-2100-view no-repeat-background materialboxed"
+                      alt="KMC 2100R ULTRA"
+                      className="products kmc-2100-r-ultra-view no-repeat-background materialboxed"
                     />
                   </Col>
                 </Col>
@@ -730,10 +651,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>DESMONTADORA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -772,10 +689,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>ACESSÓRIOS</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -814,10 +727,6 @@ const ProductsPage = () => (
                 <Col s={12}>
                   <div className="row">
                     <h5>BALANCEADORA MOTORIZADA</h5>
-                    <p>
-                      Solução ideal para Oficinas Mecânica, com fácil manuseio
-                      otimiza espaço e processo de alinhamento.
-                    </p>
                   </div>
                   <Col s={12} m={12} l={12}>
                     <div
@@ -831,6 +740,15 @@ const ProductsPage = () => (
           </Modal>
         </Col>
       </Row>
+      <div>
+                    <Modal
+                        
+                        fixedFooter
+                        trigger={<Button className="fixed-button red" waves fixed large >Orçamento</Button>}>
+                        <br /><br /><br /><br /><h4 className="center-align">Faça um orçamento conosco, vamos responder em até 24horas. <span><br /><h2>;)</h2></span></h4><br /><br /><br />
+                        <Form orcamento={'orcamento'} />
+                    </Modal>
+                </div>
     </div>
   </div>
 );

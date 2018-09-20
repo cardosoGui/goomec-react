@@ -15,6 +15,7 @@
 }
 .products {
   height: 100%;
+  transition: 0.8s; 
 }
 .no-repeat-background {
   background-repeat: no-repeat;

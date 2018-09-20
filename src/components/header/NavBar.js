@@ -23,9 +23,9 @@ const NavBar = () => (
       <NavItem node="a" href="/produtos">
         Produtos
       </NavItem>
-      <NavItem node="a" href="/dicas-e-artigos">
+      {/* <NavItem node="a" href="/dicas-e-artigos">
         Dicas
-      </NavItem>
+      </NavItem> */}
       <NavItem node="a" href="/contato">
         Contato
       </NavItem>
@@ -56,12 +56,12 @@ const NavBar = () => (
           <span className="nav-item-text">Produtos</span>
         </div>
       </Link>
-      <Link to="/dicas-e-artigos">
+      {/* <Link to="/dicas-e-artigos">
         <div className="nav-item-menu">
           <Icon>build</Icon>
           <span className="nav-item-text">Dicas e Artigos</span>
         </div>
-      </Link>
+      </Link> */}
       <Link to="/contato">
         <div className="nav-item-menu">
           <Icon>contacts</Icon>
