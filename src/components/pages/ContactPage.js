@@ -3,6 +3,7 @@ import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import Slogan from "../../components/utils/Slogan";
 import axios from "axios";
 import history from "../utils/History";
+import ReactGA from "react-ga";
 
 import emailContato from "../../img/Background/email-contato.jpg";
 
@@ -14,6 +15,14 @@ class ContactPage extends React.Component {
       send: false
     };
   }
+
+  handleClick() {
+    ReactGA.event({
+      category: "Navigation",
+      action: "Clicked Link"
+    });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
@@ -57,6 +66,7 @@ class ContactPage extends React.Component {
     window.Materialize.toast("Enviando menssagem", 5000);
   };
   render() {
+    ReactGA.pageview("/contato");
     return (
       <div className="josefin-font">
         <Col s={10} m={12}>
@@ -130,7 +140,14 @@ class ContactPage extends React.Component {
               ""
             )}
             <Col className="center-align" s={12} m={12}>
-              <Button className="blue" large type="submit">
+              <Button
+                onClick={() => {
+                  this.handleClick();
+                }}
+                className="blue"
+                large
+                type="submit"
+              >
                 Enviar
               </Button>
             </Col>

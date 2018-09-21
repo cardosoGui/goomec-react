@@ -17,6 +17,7 @@ import Typist from "react-typist";
 import Slogan from "../utils/Slogan";
 import SlideItem from "../utils/SlideItem";
 import Form from "../utils/Form";
+import ReactGA from "react-ga";
 
 import logo from "../../img/Logo/logo.png";
 
@@ -42,12 +43,30 @@ class HomePage extends React.Component {
     divClassName: "qualidade"
   };
 
+  handleClick() {
+    ReactGA.outboundLink(
+      {
+        label: "Clicou em alinhadores"
+      },
+      function() {
+        console.log("redirect here");
+      }
+    );
+  }
+  handleClickProduct() {
+    ReactGA.event({
+      category: "Produtos",
+      action: "Clicou em produtos"
+    });
+  }
+
   done = () => {
     this.setState({ typing: false }, () => {
       this.setState({ typing: true });
     });
   };
   render() {
+    ReactGA.pageview("/home");
     return (
       <div>
         <Helmet>
@@ -227,6 +246,7 @@ class HomePage extends React.Component {
                       <CollectionItem
                         className="item"
                         onClick={() => {
+                          this.handleClick();
                           this.setState({
                             title: "KMC 3D EXPERT",
                             divClassName:
@@ -342,7 +362,12 @@ class HomePage extends React.Component {
 
             <Col offset="s1 l1" s={10} m={5} l={5}>
               <h4>{this.state.title}</h4>
-              <a href="/produtos">
+              <a
+                onClick={() => {
+                  this.handleClickProduct();
+                }}
+                href="/produtos"
+              >
                 <div className={this.state.divClassName} />
               </a>
             </Col>
