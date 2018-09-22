@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import Typist from "react-typist";
 import Slogan from "../utils/Slogan";
 import SlideItem from "../utils/SlideItem";
-import Form from "../utils/Form";
+import FormAd from "../utils/FormAd";
 import ReactGA from "react-ga";
 
 import logo from "../../img/Logo/logo.png";
@@ -70,12 +70,14 @@ class HomePage extends React.Component {
     return (
       <div>
         <Helmet>
-          <title> GooMec | Alinhadores, Balanceadoras</title>
+          <title>
+            GooMec | Alinhadores, Balanceadoras, Desmontadoras, Elevadores,
+            Rampas
+          </title>
           <meta
             name="description"
             content="Plataforma de conteúdo automotivo, especializada em divulgação produtos e ferramentas mecânicas para o centro automotivo"
           />
-          <meta name="theme-color" content="#008f68" />
         </Helmet>
         <div className="center-align josefin-font">
           <Col s={10} m={12} l={12}>
@@ -221,7 +223,7 @@ class HomePage extends React.Component {
                     </Col>
                 </Row> */}
           <Row style={{ height: "55em" }}>
-            <Col offset="s1 m1 l1" s={10} m={4} l={4}>
+            <Col offset="s1 m1 l1" s={10} m={5} l={4}>
               <div className="text-header">
                 <h4>Motivações</h4>
               </div>
@@ -273,6 +275,7 @@ class HomePage extends React.Component {
                     </Link>
                     <Link to="/">
                       <CollectionItem
+                        style={{ lineHeight: "1em" }}
                         className="item"
                         onClick={() => {
                           this.setState({
@@ -390,7 +393,7 @@ class HomePage extends React.Component {
               <br />
               <br />
               <br />
-              <Form />
+              <FormAd />
             </Modal>
           </Row>
         </div>
