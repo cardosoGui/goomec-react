@@ -15,7 +15,7 @@
 }
 .products {
   height: 100%;
-  transition: 0.8s; 
+  transition: 0.8s;
 }
 .no-repeat-background {
   background-repeat: no-repeat;
@@ -189,16 +189,26 @@
 }
 @media screen and (max-width: 1500px) {
   .products {
-    height: 60em;
+    height: 150%;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .orcamento {
+    height: 50px !important;
+    width: 124px !important;
+    padding: 0em 1em !important;
+  }
   .modal .modal-content {
     padding: 0.5em;
   }
   .products {
-    height: 40em;
+    height: 121%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products-list h4 {
+    font-size: 1.25em !important;
   }
 }
 

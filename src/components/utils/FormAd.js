@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";

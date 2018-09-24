@@ -36,17 +36,23 @@ class ProductsPage extends React.Component {
           />
         </Helmet>
         <div className="center-align josefin-font">
-          <Col s={10} m={12}>
+          <Col s={10} m={12} l={12}>
             <Slogan title={"GOOMEC"} image={carClassic} />
           </Col>
-          <div style={{ width: "80%", marginLeft: "10%" }}>
+          <div>
             <Row>
               <Col className="center-align" offset="s2 m4" s={8} m={4}>
                 <h3>Produtos:</h3>
               </Col>
             </Row>
             <Row>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m1"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -246,8 +252,13 @@ class ProductsPage extends React.Component {
                   </Tabs>
                 </Modal>
               </Col>
-              <Col m={2} l={1} />
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m2"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -359,7 +370,13 @@ class ProductsPage extends React.Component {
                 </Modal>
               </Col>
 
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m1"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -414,7 +431,13 @@ class ProductsPage extends React.Component {
                   </Tabs>
                 </Modal>
               </Col>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m2"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -468,7 +491,13 @@ class ProductsPage extends React.Component {
             </Row>
 
             <Row>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m1"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -573,7 +602,13 @@ class ProductsPage extends React.Component {
                   </Tabs>
                 </Modal>
               </Col>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m2"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -690,7 +725,13 @@ class ProductsPage extends React.Component {
                   </Tabs>
                 </Modal>
               </Col>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m1"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -728,7 +769,13 @@ class ProductsPage extends React.Component {
                   </Tabs>
                 </Modal>
               </Col>
-              <Col className="categories-content" s={12} m={3}>
+              <Col
+                className="categories-content"
+                offset="m2"
+                s={12}
+                m={4}
+                l={3}
+              >
                 <div className="row">
                   <img
                     className="categories-img thumbnail"
@@ -771,7 +818,12 @@ class ProductsPage extends React.Component {
               <Modal
                 fixedFooter
                 trigger={
-                  <Button className="fixed-button red" waves fixed large>
+                  <Button
+                    className="fixed-button red orcamento pulse"
+                    waves
+                    fixed
+                    large
+                  >
                     Orçamento
                   </Button>
                 }
@@ -790,7 +842,7 @@ class ProductsPage extends React.Component {
                 <br />
                 <br />
                 <br />
-                <Form orcamento={"orcamento"} />
+                <Form />
               </Modal>
             </div>
           </div>

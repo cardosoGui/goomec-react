@@ -13,13 +13,6 @@ function fireTracking() {
   ReactGA.pageview(window.location.hash);
 }
 
-ReactGA.timing({
-  category: "JS Libraries",
-  variable: "load",
-  value: 20, // in milliseconds
-  label: "CDN libs"
-});
-
 ReactDOM.render(
   <Router onUpdate={fireTracking} history={history}>
     <App />

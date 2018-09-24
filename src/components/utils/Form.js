@@ -1,10 +1,9 @@
+/* eslint-disable */
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";
-import history from "../utils/History";
-import PropTypes from "prop-types";
 import checkboxes from "../utils/checkboxes";
-import CheckBox from "../utils/CheckBox";
+import Checkbox from "../utils/Checkbox";
 
 class Form extends React.Component {
   constructor() {
@@ -12,8 +11,7 @@ class Form extends React.Component {
     this.state = {
       loading: false,
       send: false,
-      checkedItems: new Map(),
-      teste: ""
+      checkedItems: new Map()
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -61,8 +59,6 @@ class Form extends React.Component {
         }
       });
     } else {
-      console.log();
-
       window.Materialize.toast("Por favor, preencha os campos!", 3000);
     }
   }
@@ -128,10 +124,10 @@ class Form extends React.Component {
               </Input>
 
               <div>
-                <Col s={10} m={10} l={10}>
+                <Col s={12} m={10} l={10}>
                   {checkboxes.map(item => (
                     <div key={item.key}>
-                      <CheckBox
+                      <Checkbox
                         name={item.name}
                         checked={this.state.checkedItems.get(item.name)}
                         onChange={this.handleChange}
@@ -166,8 +162,5 @@ class Form extends React.Component {
     );
   }
 }
-Form.propTypes = {
-  orcamento: PropTypes.string
-};
 
 export default Form;

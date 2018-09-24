@@ -10,9 +10,9 @@ const Checkbox = ({
   onChange
 }) => (
   <Input
-    s={2}
-    m={5}
-    l={3}
+    s={10}
+    m={10}
+    l={6}
     type={type}
     name={name}
     label={name}
