@@ -17,12 +17,21 @@ class ContactPage extends React.Component {
     };
   }
 
+<<<<<<< HEAD
   // handleClick() {
   //   ReactGA.event({
   //     category: "Navigation",
   //     action: "Clicked Link"
   //   });
   // }
+=======
+  handleClick() {
+    ReactGA.event({
+      category: "Navigation",
+      action: "Clicked Link"
+    });
+  }
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
 
   handleSubmit(e) {
     e.preventDefault();

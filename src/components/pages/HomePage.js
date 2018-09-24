@@ -43,11 +43,25 @@ class HomePage extends React.Component {
   };
 
   handleClick() {
+<<<<<<< HEAD
+=======
+    ReactGA.outboundLink(
+      {
+        label: "Clicou em alinhadores"
+      },
+      function() {
+        console.log("redirect here");
+      }
+    );
+  }
+  handleClickProduct() {
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
     ReactGA.event({
       category: "Produtos",
       action: "Clicou em produtos"
     });
   }
+<<<<<<< HEAD
   // handleClick() {
   //   ReactGA.outboundLink(
   //     {
@@ -58,6 +72,8 @@ class HomePage extends React.Component {
   //     }
   //   );
   // }
+=======
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
 
   done = () => {
     this.setState({ typing: false }, () => {
@@ -70,12 +86,14 @@ class HomePage extends React.Component {
     return (
       <div>
         <Helmet>
-          <title> GooMec | Alinhadores, Balanceadoras</title>
+          <title>
+            GooMec | Alinhadores, Balanceadoras, Desmontadoras, Elevadores,
+            Rampas
+          </title>
           <meta
             name="description"
             content="Plataforma de conteúdo automotivo, especializada em divulgação produtos e ferramentas mecânicas para o centro automotivo"
           />
-          <meta name="theme-color" content="#008f68" />
         </Helmet>
         <div className="center-align josefin-font">
           <Col s={10} m={12} l={12}>
@@ -267,6 +285,7 @@ class HomePage extends React.Component {
                         </Slider>
                     </Col>
                 </Row> */}
+<<<<<<< HEAD
           <Row>
             <Col offset="s1 m1 l1" s={10} m={10} l={10}>
               <div>
@@ -438,6 +457,160 @@ class HomePage extends React.Component {
                 </a>
               </div>
             </Col> */}
+=======
+          <Row style={{ height: "55em" }}>
+            <Col offset="s1 m1 l1" s={10} m={5} l={4}>
+              <div className="text-header">
+                <h4>Motivações</h4>
+              </div>
+              <div className="text-content">
+                <h5 className="center-align">
+                  Equipamentos para o seu
+                  <span span className="blue-text text-darken-2">
+                    {" "}
+                    Centro Automotivo.{" "}
+                  </span>
+                  com tecnologia de ponta, 100% nacional. Parcele sua compras
+                  com cartão BNDES
+                </h5>
+                <h5 className="center-align">
+                  Otimize seu serviço, aumentando sua produtividade. Conheça a
+                  linha de produtos KMC:
+                </h5>
+                <br />
+                <h4>
+                  <Collection>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.handleClick();
+                          this.setState({
+                            title: "KMC 3D EXPERT",
+                            divClassName:
+                              "products kmc-3d-expert-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Alinhadores
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC HD",
+                            divClassName:
+                              "products kmc-hd-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Rampas
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        style={{ lineHeight: "1em" }}
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 18p",
+                            divClassName:
+                              "products kmc-18p-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Base de Alinhamento
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC R 4500S",
+                            divClassName:
+                              "products kmc-r-4000s-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Elevadores
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 1800R",
+                            divClassName:
+                              "products kmc-1800-r-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Balanceadoras
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 906R",
+                            divClassName:
+                              "products kmc-r-906-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Desmontadoras
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "CONJUNTO PARA VALETA",
+                            divClassName:
+                              "products kmc-acessorio-view no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Acessórios
+                      </CollectionItem>
+                    </Link>
+                    <Link to="/">
+                      <CollectionItem
+                        className="item"
+                        onClick={() => {
+                          this.setState({
+                            title: "KMC 3090 TRUCK",
+                            divClassName:
+                              "products kmc-3090-truck-view  no-repeat-background materialboxed"
+                          });
+                        }}
+                      >
+                        Linha Pesada
+                      </CollectionItem>
+                    </Link>
+                  </Collection>
+                </h4>
+              </div>
+            </Col>
+
+            <Col offset="s1 l1" s={10} m={5} l={5}>
+              <h4>{this.state.title}</h4>
+              <a
+                onClick={() => {
+                  this.handleClickProduct();
+                }}
+                href="/produtos"
+              >
+                <div className={this.state.divClassName} />
+              </a>
+            </Col>
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
 
             <Modal
               fixedFooter

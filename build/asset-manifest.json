@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
   "main.css": "static/css/main.b14d5c70.css",
   "main.css.map": "static/css/main.b14d5c70.css.map",
   "main.js": "static/js/main.1c3c2fa9.js",
   "main.js.map": "static/js/main.1c3c2fa9.js.map",
+=======
+  "main.css": "static/css/main.3d726980.css",
+  "main.css.map": "static/css/main.3d726980.css.map",
+  "main.js": "static/js/main.bbe6d6b3.js",
+  "main.js.map": "static/js/main.bbe6d6b3.js.map",
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
   "static/media/MaterialIcons-Regular.eot": "static/media/MaterialIcons-Regular.e79bfd88.eot",
   "static/media/MaterialIcons-Regular.ttf": "static/media/MaterialIcons-Regular.a37b0c01.ttf",
   "static/media/MaterialIcons-Regular.woff": "static/media/MaterialIcons-Regular.012cf6a1.woff",

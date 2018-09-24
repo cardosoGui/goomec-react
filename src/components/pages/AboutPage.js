@@ -50,12 +50,12 @@ const AboutPage = () => (
         <div className="row container">
           <h2 className="header">Nosso Compromisso</h2>
           <h4 className="grey-text text-darken-3 lighten-3">
-            Tornar a GooMec a maior prataforma no segmento automotivo do brasil.
+            Tornar a GooMec a maior prataforma no segmento automotivo do Brasil.
           </h4>
         </div>
       </div>
     </Row>
-    
+
     {/* <Row>
       <Col className="offset-s1 offset-m1" s={10} m={6}>
         <div className="text-header">

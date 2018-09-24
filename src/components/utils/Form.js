@@ -2,8 +2,15 @@
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";
+<<<<<<< HEAD
 import checkboxes from "../utils/checkboxes";
 import Checkbox from "../utils/Checkbox";
+=======
+import history from "../utils/History";
+import PropTypes from "prop-types";
+import checkboxes from "../utils/checkboxes";
+import CheckBox from "../utils/CheckBox";
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
 
 class Form extends React.Component {
   constructor() {
@@ -60,6 +67,8 @@ class Form extends React.Component {
         }
       });
     } else {
+      console.log();
+
       window.Materialize.toast("Por favor, preencha os campos!", 3000);
     }
   }
@@ -125,10 +134,17 @@ class Form extends React.Component {
               </Input>
 
               <div>
+<<<<<<< HEAD
                 <Col s={12} m={10} l={10}>
                   {checkboxes.map(item => (
                     <div key={item.key}>
                       <Checkbox
+=======
+                <Col s={10} m={10} l={10}>
+                  {checkboxes.map(item => (
+                    <div key={item.key}>
+                      <CheckBox
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
                         name={item.name}
                         checked={this.state.checkedItems.get(item.name)}
                         onChange={this.handleChange}

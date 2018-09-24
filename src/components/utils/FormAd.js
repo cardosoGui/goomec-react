@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* eslint-disable */
+=======
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";
@@ -26,10 +29,17 @@ class FormAd extends React.Component {
           url:
             "https://us-central1-goomec-cdaf3.cloudfunctions.net/enviarEmail",
           data: {
+<<<<<<< HEAD
             name,
             email,
             phone,
             message
+=======
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+>>>>>>> f11a08b58b216fc3dd9ff431bc989c4ec5183424
           }
         },
         this.setState({ loading: true })
