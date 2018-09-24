@@ -1,51 +1,61 @@
+/* eslint-disable */
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";
-import history from "../utils/History";
-import PropTypes from "prop-types";
+import checkboxes from "../utils/checkboxes";
+import Checkbox from "../utils/Checkbox";
 
 class Form extends React.Component {
   constructor() {
     super();
     this.state = {
       loading: false,
-      send: false
+      send: false,
+      checkedItems: new Map(),
+      teste: ""
     };
+    this.handleChange = this.handleChange.bind(this);
   }
+  handleChange(e) {
+    const item = e.target.name;
+
+    this.setState(prevState => ({
+      checkedItems: prevState.checkedItems.set(item)
+    }));
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
-    const checkbox = document.getElementById("checkbox").value;
+    const checkbox = Array.from(this.state.checkedItems);
 
     if ((name && email && message && phone) !== "") {
       axios(
         {
           method: "POST",
           url:
-            "https://us-central1-pwa-experiment-eb2bd.cloudfunctions.net/enviarEmail",
+            "https://us-central1-goomec-cdaf3.cloudfunctions.net/enviarEmail",
           data: {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message,
-            checkbox: checkbox
+            name,
+            email,
+            phone,
+            message,
+            checkbox
           }
         },
         this.setState({ loading: true })
       ).then(response => {
-        if (response.data.msg === "success") {
+        if (response.data === "success") {
           this.setState({ loading: false });
+
           window.Materialize.toast(
             "Mensagem Enviada, aguarde nosso contato!",
             5000
           );
-          setTimeout(() => {
-            history.push("/");
-          }, 3000);
-        } else if (response.data.msg === "fail") {
+        } else if (response.data === "fail") {
           alert("Erro ao enviar mensagem.");
         }
       });
@@ -113,94 +123,20 @@ class Form extends React.Component {
               >
                 <Icon>message</Icon>
               </Input>
-              {this.props.orcamento === "orcamento" ? (
-                <div>
-                  <Col s={10} m={10} l={10}>
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="Alinhadores"
-                      name="group1"
-                      type="checkbox"
-                      value="Alinhadores"
-                      label="Alinhadores"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="Rampas"
-                      name="group1"
-                      type="checkbox"
-                      value="Rampas"
-                      label="Rampas"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Base de Alinhamento"
-                      label="Base de Alinhamento"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Elevadores"
-                      label="Elevadores"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Balanceadoras"
-                      label="Balanceadoras"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Desmontadoras"
-                      label="Desmonstadoras"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Acessórios"
-                      label="Acessórios"
-                    />
-                    <Input
-                      s={2}
-                      m={3}
-                      l={3}
-                      id="checkbox"
-                      name="group1"
-                      type="checkbox"
-                      value="Linha Pesada"
-                      label="Linha Pesada"
-                    />
-                  </Col>
-                </div>
-              ) : (
-                ""
-              )}
+
+              <div>
+                <Col s={12} m={10} l={10}>
+                  {checkboxes.map(item => (
+                    <div key={item.key}>
+                      <Checkbox
+                        name={item.name}
+                        checked={this.state.checkedItems.get(item.name)}
+                        onChange={this.handleChange}
+                      />
+                    </div>
+                  ))}
+                </Col>
+              </div>
             </Col>
             {this.state.loading ? (
               <Col
@@ -216,7 +152,6 @@ class Form extends React.Component {
             )}
             <Col className="center-align" s={12} m={12}>
               <br />
-              <br />
               <br />{" "}
               <Button className="blue" large type="submit">
                 Enviar
@@ -228,8 +163,5 @@ class Form extends React.Component {
     );
   }
 }
-Form.propTypes = {
-  orcamento: PropTypes.string
-};
 
 export default Form;

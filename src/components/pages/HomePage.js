@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { Helmet } from "react-helmet";
 import {
@@ -5,18 +6,16 @@ import {
   Col,
   Carousel,
   Button,
-  Slider,
-  Slide,
   Modal,
   Collection,
-  CollectionItem,
-  Icon
+  CollectionItem
 } from "react-materialize";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
 import Slogan from "../utils/Slogan";
 import SlideItem from "../utils/SlideItem";
-import Form from "../utils/Form";
+import FormAd from "../utils/FormAd";
+import ReactGA from "react-ga";
 
 import logo from "../../img/Logo/logo.png";
 
@@ -34,20 +33,40 @@ import balanceadoras from "../../img/Products/Balanceadoras/01_kmc_balanceadora_
 import desmontadoras from "../../img/Products/Desmontadoras/01_kmc_desm_1500/kmc_1500.jpg";
 import acessorios from "../../img/Products/Acessorios/01_kmc_acessorio/kmc_acessorio.jpg";
 import linhaPesada from "../../img/Products/Linha_Pesada/01_kmc_3090_truck/kmc_3090_Truck.jpg";
+import qualidade from "../../img/Logo/selo_qualidade.png";
 
 class HomePage extends React.Component {
   state = {
     typing: true,
     title: "KMC",
-    divClassName: "qualidade"
+    itemImage: qualidade
   };
+
+  handleClick() {
+    ReactGA.event({
+      category: "Produtos",
+      action: "Clicou em produtos"
+    });
+  }
+  // handleClick() {
+  //   ReactGA.outboundLink(
+  //     {
+  //       label: "Clicou em alinhadores"
+  //     },
+  //     function() {
+  //       console.log("redirect here");
+  //     }
+  //   );
+  // }
 
   done = () => {
     this.setState({ typing: false }, () => {
       this.setState({ typing: true });
     });
   };
+
   render() {
+    ReactGA.pageview("/home");
     return (
       <div>
         <Helmet>
@@ -106,15 +125,38 @@ class HomePage extends React.Component {
             <Col m={2}>Distribuidor Oficial:</Col>
             <Col m={8}>
               <br />
-              <img src={logo} width="150px" />
+              <img alt="logo_kmc" src={logo} width="150px" />
             </Col>
             {/* <Col m={4}>Seja parceiro</Col> */}
           </Row>
           <div className="divider" />
           <Row>
-            <Col className="center-align" offset=" m4" s={12} m={4}>
-              <h3>Monte sua oficina:</h3>
+            <Col offset="s1 m1 l2" s={10} m={9} l={8}>
+              <div className="text-header">
+                <h4>Monte sua oficina</h4>
+              </div>
+              <div className="text-content">
+                <h5 className="center-align">
+                  Tecnologia de ponta para o seu <br />
+                  <span span className="blue-text text-darken-2">
+                    {" "}
+                    Centro Automotivo{" "}
+                  </span>
+                  100% nacional. <br />
+                  Parcele sua compras com cartão BNDES
+                </h5>
+                <h5 className="center-align">
+                  Otimize seu serviço, aumentando sua produtividade. <br />
+                  Conheça a linha de produtos{" "}
+                  <span span className="blue-text text-darken-2">
+                    KMC
+                  </span>
+                  :
+                </h5>
+              </div>
             </Col>
+          </Row>
+          <Row className="hide-on-med-and-up">
             <Col s={12} m={12}>
               <Carousel>
                 <div>
@@ -149,12 +191,36 @@ class HomePage extends React.Component {
                 </div>
               </Carousel>
 
-              <Button className="blue" node="a" href="/produtos" large>
+              <Button
+                className="blue hide-on-med-and-down"
+                onClick={() => {
+                  this.handleClickProduct();
+                }}
+                node="a"
+                href="/produtos"
+                large
+              >
                 Produtos
               </Button>
+              <div className="hide-on-med-and-up">
+
+              <Link to="/produtos">
+              <Button
+                className="blue "
+                onClick={() => {
+                  this.handleClickProduct();
+                }}
+                
+                large
+                >
+                Produtos
+              </Button>
+                </Link>
+                </div>
             </Col>
           </Row>
           <div className="divider" />
+
           {/* <Row>
                     <Col className="center-align offset-s2 offset-m4" s={8} m={4}>
                         <h3>Conteúdo</h3>
@@ -201,157 +267,183 @@ class HomePage extends React.Component {
                         </Slider>
                     </Col>
                 </Row> */}
-          <Row style={{ height: "55em" }}>
-            <Col offset="s1 m1 l1" s={10} m={4} l={4}>
-              <div className="text-header">
-                <h4>Motivações</h4>
-              </div>
-              <div className="text-content">
-                <h5 className="center-align">
-                  Equipamentos para o seu
-                  <span span className="blue-text text-darken-2">
-                    {" "}
-                    Centro Automotivo.{" "}
-                  </span>
-                  com tecnologia de ponta, 100% nacional. Parcele sua compras
-                  com cartão BNDES
-                </h5>
-                <h5 className="center-align">
-                  Otimize seu serviço, aumentando sua produtividade. Conheça a
-                  linha de produtos KMC:
-                </h5>
+          <Row>
+            <Col offset="s1 m1 l1" s={10} m={10} l={10}>
+              <div>
                 <br />
-                <h4>
-                  <Collection>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC 3D EXPERT",
-                            divClassName:
-                              "products kmc-3d-expert-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Alinhadores
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC HD",
-                            divClassName:
-                              "products kmc-hd-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Rampas
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC 18p",
-                            divClassName:
-                              "products kmc-18p-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Base de Alinhamento
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC R 4500S",
-                            divClassName:
-                              "products kmc-r-4000s-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Elevadores
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC 1800R",
-                            divClassName:
-                              "products kmc-1800-r-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Balanceadoras
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC 906R",
-                            divClassName:
-                              "products kmc-r-906-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Desmontadoras
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "CONJUNTO PARA VALETA",
-                            divClassName:
-                              "products kmc-acessorio-view no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Acessórios
-                      </CollectionItem>
-                    </Link>
-                    <Link to="/">
-                      <CollectionItem
-                        className="item"
-                        onClick={() => {
-                          this.setState({
-                            title: "KMC 3090 TRUCK",
-                            divClassName:
-                              "products kmc-3090-truck-view  no-repeat-background materialboxed"
-                          });
-                        }}
-                      >
-                        Linha Pesada
-                      </CollectionItem>
-                    </Link>
-                  </Collection>
-                </h4>
+                <div className="hide-on-small-only">
+                  <Col s={5} m={6} l={5} className="products-list">
+                    <h4>
+                      <Collection>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC 3D EXPERT",
+                                itemImage: alinhadores
+                              });
+                            }}
+                          >
+                            Alinhadores
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC HD",
+                                itemImage: rampas
+                              });
+                            }}
+                          >
+                            Rampas
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC 18p",
+                                itemImage: baseAlinhamento
+                              });
+                            }}
+                          >
+                            Base de Alinhamento
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC R 4500S",
+                                itemImage: elevadores
+                              });
+                            }}
+                          >
+                            Elevadores
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC 1800R",
+                                itemImage: balanceadoras
+                              });
+                            }}
+                          >
+                            Balanceadoras
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "KMC 906R",
+                                itemImage: desmontadoras
+                              });
+                            }}
+                          >
+                            Desmontadoras
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.handleClick();
+                              this.setState({
+                                title: "CONJUNTO PARA VALETA",
+                                itemImage: acessorios
+                              });
+                            }}
+                          >
+                            Acessórios
+                          </CollectionItem>
+                        </Link>
+                        <Link to="/">
+                          <CollectionItem
+                            className="item"
+                            onClick={() => {
+                              this.setState({
+                                title: "KMC 3090 TRUCK",
+                                itemImage: linhaPesada
+                              });
+                              this.handleClick();
+                            }}
+                          >
+                            Linha Pesada
+                          </CollectionItem>
+                        </Link>
+                      </Collection>
+                    </h4>
+                  </Col>
+                  <Col offset="s1 m1 l2" s={10} m={5} l={5}>
+                    <a
+                      onClick={() => {
+                        this.handleClick();
+                      }}
+                      href="/produtos"
+                    >
+                      <div className="hoverable">
+                        <SlideItem
+                          title={this.state.title}
+                          thumbnail={this.state.itemImage}
+                        />
+                      </div>
+                    </a>
+                  </Col>
+                  {/* <Col className="hide-on-large-only" s={10} m={5} l={5}>
+                    <div>
+                      <a href="/produtos">
+                        <h5 className="text-justify">
+                          <i>
+                            Otimize sua produtividade adquirindo a ferramenta
+                            perfeita. Conheça a linha de produtos KMC
+                          </i>
+                        </h5>
+                      </a>
+                    </div>
+                  </Col> */}
+                </div>
               </div>
             </Col>
-
-            <Col offset="s1 l1" s={10} m={5} l={5}>
-              <h4>{this.state.title}</h4>
-              <a href="/produtos">
-                <div className={this.state.divClassName} />
-              </a>
-            </Col>
+            {/* <Col
+              className="hide-on-med-and-down"
+              offset="l3"
+              s={10}
+              m={6}
+              l={6}
+            >
+              <div>
+                <a href="/produtos">
+                  <h5 className="text-justify">
+                    <i>
+                      Otimize sua produtividade adquirindo a ferramenta
+                      perfeita. Conheça a linha de produtos KMC
+                    </i>
+                  </h5>
+                </a>
+              </div>
+            </Col> */}
 
             <Modal
               fixedFooter
               trigger={
-                <Button className="fixed-button red" waves fixed large>
-                  Anuncie Aqui
+                <Button className="fixed-button red pulse" waves fixed>
+                  Anuncie
                 </Button>
               }
             >
@@ -365,7 +457,7 @@ class HomePage extends React.Component {
               <br />
               <br />
               <br />
-              <Form />
+              <FormAd />
             </Modal>
           </Row>
         </div>

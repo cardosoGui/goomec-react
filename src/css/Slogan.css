@@ -1,5 +1,5 @@
 .capa-site {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .display-flex {
   display: flex;
@@ -24,6 +24,7 @@
   margin-bottom: 1em;
 }
 .sub-slogan h3 {
+  color: #d50000;
   font-size: 2em;
 }
 .text-about {

@@ -741,14 +741,13 @@ const ProductsPage = () => (
         </Col>
       </Row>
       <div>
-                    <Modal
-                        
-                        fixedFooter
-                        trigger={<Button className="fixed-button red" waves fixed large >Orçamento</Button>}>
-                        <br /><br /><br /><br /><h4 className="center-align">Faça um orçamento conosco, vamos responder em até 24horas. <span><br /><h2>;)</h2></span></h4><br /><br /><br />
-                        <Form orcamento={'orcamento'} />
-                    </Modal>
-                </div>
+    <Modal
+      fixedFooter
+           trigger={<Button style={{fontSize: '0.70em'}} className="fixed-button red pulse" waves fixed >Orçamento</Button>}>
+          <br /><br /><br /><br /><h4 className="center-align">Faça um orçamento conosco, vamos responder em até 24horas. <span><br /><h2>;)</h2></span></h4><br /><br /><br />
+         <Form />
+         </Modal>
+      </div>
     </div>
   </div>
 );

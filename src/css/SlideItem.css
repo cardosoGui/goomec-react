@@ -12,6 +12,6 @@
   box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.55);
 }
 .carousel {
-  perspective: 80em;
-  height: 30em;
+  perspective: 16em;
+  height: 23em;
 }

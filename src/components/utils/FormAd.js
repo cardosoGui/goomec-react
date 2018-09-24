@@ -1,14 +1,10 @@
 /* eslint-disable */
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
-import Slogan from "../../components/utils/Slogan";
 import axios from "axios";
 import history from "../utils/History";
-import ReactGA from "react-ga";
 
-import emailContato from "../../img/Background/email-contato.jpg";
-
-class ContactPage extends React.Component {
+class FormAd extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -16,14 +12,6 @@ class ContactPage extends React.Component {
       send: false
     };
   }
-
-  // handleClick() {
-  //   ReactGA.event({
-  //     category: "Navigation",
-  //     action: "Clicked Link"
-  //   });
-  // }
-
   handleSubmit(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
@@ -46,8 +34,6 @@ class ContactPage extends React.Component {
         },
         this.setState({ loading: true })
       ).then(response => {
-        console.log(response);
-
         if (response.data === "success") {
           this.setState({ loading: false });
           window.Materialize.toast(
@@ -58,7 +44,7 @@ class ContactPage extends React.Component {
             history.push("/");
           }, 3000);
         } else if (response.data === "fail") {
-          alert("Message failed to send.");
+          alert("Erro ao enviar mensagem.");
         }
       });
     } else {
@@ -69,12 +55,8 @@ class ContactPage extends React.Component {
     window.Materialize.toast("Enviando menssagem", 5000);
   };
   render() {
-    ReactGA.pageview("/contato");
     return (
       <div className="josefin-font">
-        <Col s={10} m={12}>
-          <Slogan title={"GOOMEC"} image={emailContato} />
-        </Col>
         <Row>
           <form
             id="contact-form"
@@ -84,7 +66,7 @@ class ContactPage extends React.Component {
             <Col className="center-align" offset="s2 m4" s={8} m={4}>
               <h3>Contato</h3>
             </Col>
-            <Col offset="s1 m3">
+            <Col offset="s1 m2 l2">
               <Input
                 autoComplete="off"
                 id="name"
@@ -143,14 +125,10 @@ class ContactPage extends React.Component {
               ""
             )}
             <Col className="center-align" s={12} m={12}>
-              <Button
-                onClick={() => {
-                  this.handleClick();
-                }}
-                className="blue"
-                large
-                type="submit"
-              >
+              <br />
+              <br />
+              <br />{" "}
+              <Button className="blue" large type="submit">
                 Enviar
               </Button>
             </Col>
@@ -161,4 +139,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage;
+export default FormAd;
