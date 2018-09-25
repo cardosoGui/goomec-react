@@ -189,7 +189,7 @@
 }
 @media screen and (max-width: 1500px) {
   .products {
-    height: 150%;
+    height: 900px;
   }
 }
 
@@ -203,7 +203,7 @@
     padding: 0.5em;
   }
   .products {
-    height: 121%;
+    height: 800px;
   }
 }
 @media screen and (max-width: 768px) {
