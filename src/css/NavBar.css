@@ -4,6 +4,12 @@
   position: fixed;
   background-color: red;
 }
+.brand-logo {
+  margin-left: 2em;
+  border-radius: 0.3em 0.3em;
+  width: 100px;
+  height: 100px;
+}
 .item-menu-nav {
   text-align: center;
 }

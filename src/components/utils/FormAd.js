@@ -25,7 +25,7 @@ class FormAd extends React.Component {
         {
           method: "POST",
           url:
-            "https://us-central1-goomec-cdaf3.cloudfunctions.net/enviarEmail",
+            "https://us-central1-pwa-experiment-eb2bd.cloudfunctions.net/enviarEmail",
           data: {
             name: name,
             email: email,
