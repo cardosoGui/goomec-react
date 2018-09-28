@@ -213,7 +213,7 @@ class HomePage extends React.Component {
               </div>
             </Col>
           </Row>
-          <div className="divider" />
+          {/* <div className="divider" /> */}
 
           {/* <Row>
                     <Col className="center-align offset-s2 offset-m4" s={8} m={4}>

@@ -16,6 +16,7 @@ const Slogan = ({ title, content, image }) => (
           offset="s1"
           s={10}
           m={12}
+          l={12}
         >
           <h1>{title}</h1>
         </Col>
