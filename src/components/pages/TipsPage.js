@@ -1,7 +1,7 @@
 import React from "react";
 import Typist from "react-typist";
 import PropTypes from "prop-types";
-import { Row, Col, Button } from "react-materialize";
+import { Row, Col } from "react-materialize";
 import Slogan from "../../components/utils/Slogan";
 import MapBr from "../../components/utils/Br";
 import "../../css/TipsPage.css";

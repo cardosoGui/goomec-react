@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Row,
-  Col,
-  Button,
-  Parallax,
-  Icon,
-  Collection,
-  CollectionItem
-} from "react-materialize";
-import { Link } from "react-router-dom";
+import { Row, Parallax } from "react-materialize";
+// import { Link } from "react-router-dom";
 
 import "../../css/AboutPage.css";
 

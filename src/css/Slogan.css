@@ -1,5 +1,19 @@
 .capa-site {
-  opacity: 0.3;
+  opacity: 0.4;
+}
+.bg-gradient {
+  height: 35.8em;
+  background: #e52f1e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #e52f1e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #e52f1e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .display-flex {
   display: flex;
@@ -9,16 +23,20 @@
 
 .slogan {
   font-family: "Anton", sans-serif;
+
   position: relative;
   bottom: 32em;
   height: 0.8em;
+}
+.slogan h1 {
+  letter-spacing: 0.1em;
 }
 .text-shadown {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
 }
 .sub-slogan {
   color: #424242 !important;
-  font-family: Anton, sans-serif;
+  font-family: "Anton", sans-serif;
   line-height: 126%;
   font-size: 2.5em;
   margin-bottom: 1em;

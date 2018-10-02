@@ -79,11 +79,8 @@ class HomePage extends React.Component {
           </Col>
           <Row>
             <Col className="sub-slogan" s={12} m={12} l={12}>
-              <h2>
-                SUA PLATAFORMA DE CONTEÚDO AUTOMOTIVO
-                <br />
-              </h2>
-              <div>
+              <h2>SUA PLATAFORMA DE CONTEÚDO AUTOMOTIVO</h2>
+              <span>
                 {/* onTypingDone={this.done} Para loop */}
                 {this.state.typing ? (
                   <div>
@@ -106,7 +103,7 @@ class HomePage extends React.Component {
                 ) : (
                   ""
                 )}
-              </div>
+              </span>
             </Col>
           </Row>
           <Slogan

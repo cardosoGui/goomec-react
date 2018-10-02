@@ -7,12 +7,13 @@ import "../../css/Slogan.css";
 const Slogan = ({ title, content, image }) => (
   <div>
     {!content ? (
-      <div>
+      <div className="bg-gradient">
         <div className="capa-site">
           <Parallax alt={title} imageSrc={image} />
         </div>
+
         <Col
-          className="center-align slogan text-shadown red-text"
+          className="center-align slogan white-text"
           offset="s1"
           s={10}
           m={12}
