@@ -4,17 +4,17 @@
   position: fixed;
   background-color: red;
 }
-.brand-logo {
+/* .brand-logo {
   margin-left: 2em;
   border-radius: 0.3em 0.3em;
   width: 175px;
   height: 150px;
-}
+} */
 .item-menu-nav {
   text-align: center;
 }
 .nav-wrapper {
-  font-family: Josefin Sans, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 .nav-wrapper a {
   font-size: 1.5em;

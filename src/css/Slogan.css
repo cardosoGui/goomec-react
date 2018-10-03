@@ -29,6 +29,7 @@
   height: 0.8em;
 }
 .slogan h1 {
+  color: #e82c0c !important;
   letter-spacing: 0.1em;
 }
 .text-shadown {
@@ -43,7 +44,7 @@
   letter-spacing: 0.1em;
 }
 .sub-slogan h3 {
-  color: #d50000;
+  color: #e82c0c;
   font-size: 2em;
 }
 .text-about {

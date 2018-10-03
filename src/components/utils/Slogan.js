@@ -12,13 +12,7 @@ const Slogan = ({ title, content, image }) => (
           <Parallax alt={title} imageSrc={image} />
         </div>
 
-        <Col
-          className="center-align slogan white-text"
-          offset="s1"
-          s={10}
-          m={12}
-          l={12}
-        >
+        <Col className="center-align slogan" offset="s1" s={10} m={12} l={12}>
           <h1>{title}</h1>
         </Col>
       </div>

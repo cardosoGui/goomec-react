@@ -14,7 +14,7 @@ import logo from "../../img/Logo/goomec_logo_icon.png";
 
 const NavBar = () => (
   <div>
-    <Navbar className="navbar-color" brand={logo} fixed right>
+    <Navbar className="navbar-color" fixed right>
       <NavItem node="a" href="/">
         Home
       </NavItem>
