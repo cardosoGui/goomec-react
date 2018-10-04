@@ -1,5 +1,5 @@
 .capa-site {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .bg-gradient {
   height: 35.8em;
@@ -23,7 +23,6 @@
 
 .slogan {
   font-family: "Anton", sans-serif;
-
   position: relative;
   bottom: 32em;
   height: 0.8em;
@@ -44,7 +43,6 @@
   letter-spacing: 0.1em;
 }
 .sub-slogan h3 {
-  color: #e82c0c;
   font-size: 2em;
 }
 .text-about {

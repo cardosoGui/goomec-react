@@ -14,15 +14,21 @@
   text-align: center;
 }
 .nav-wrapper {
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #e52f1e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #e52f1e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Josefin Sans", sans-serif;
 }
 .nav-wrapper a {
   font-size: 1.5em;
 }
-.navbar-color {
-  background-color: #e82c0c;
-}
-
 .navbar-button {
   position: absolute;
   margin: 0% 0;
@@ -34,7 +40,7 @@
   padding-left: 1em;
   margin: 2em;
   margin-top: 0.5em;
-  background-color: rgba(186, 181, 172, 0.6);
+
   height: 2.5em;
   text-align: left;
   border-radius: 0.5em 0.5em;

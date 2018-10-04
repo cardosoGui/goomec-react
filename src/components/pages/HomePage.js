@@ -78,7 +78,7 @@ class HomePage extends React.Component {
             <Slogan title={"GOOMEC"} image={carSlogan} />
           </Col>
           <Row>
-            <Col className="sub-slogan" s={12} m={12} l={12}>
+            <Col className="sub-slogan" offset="s1 m2 l2" s={10} m={8} l={8}>
               <h2>SUA PLATAFORMA DE CONTEÚDO AUTOMOTIVO</h2>
               <span>
                 {/* onTypingDone={this.done} Para loop */}
@@ -105,14 +105,17 @@ class HomePage extends React.Component {
                 )}
               </span>
             </Col>
+            <Col s={12} m={12} l={12}>
+              <Slogan
+                title="Sobre a GOOMEC"
+                image={
+                  "https://firebasestorage.googleapis.com/v0/b/pwa-experiment-eb2bd.appspot.com/o/img%2FBackground%2Fcapa.jpg?alt=media&token=0aaa9fc2-483c-445f-9a16-395d6ce8d671"
+                }
+                content="Com mais de 30 anos de experiência no segmento automotivo, e a sua juventude com um mundo de tecnologia, queremos criar um universo de experiência atrelado a modernidade e praticidade. Nosso projeto surgiu, com a visão de ajudar o empresário do setor automotivo."
+              />
+            </Col>
           </Row>
-          <Slogan
-            title="Sobre a GooMec"
-            image={
-              "https://firebasestorage.googleapis.com/v0/b/pwa-experiment-eb2bd.appspot.com/o/img%2FBackground%2Fcapa.jpg?alt=media&token=0aaa9fc2-483c-445f-9a16-395d6ce8d671"
-            }
-            content="Com mais de 30 anos de experiência no segmento automotivo, e a sua juventude com um mundo de tecnologia, queremos criar um universo de experiência atrelado a modernidade e praticidade. Nosso projeto surgiu, com a visão de ajudar o empresário do setor automotivo."
-          />
+
           <div className="divider" />
           <Row>
             <Col m={2}>Distribuidor Oficial:</Col>

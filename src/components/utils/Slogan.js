@@ -11,26 +11,36 @@ const Slogan = ({ title, content, image }) => (
         <div className="capa-site">
           <Parallax alt={title} imageSrc={image} />
         </div>
-
-        <Col className="center-align slogan" offset="s1" s={10} m={12} l={12}>
+        <Col
+          className="center-align slogan text-shadown "
+          offset="s1"
+          s={10}
+          m={12}
+          l={12}
+        >
           <h1>{title}</h1>
         </Col>
       </div>
     ) : (
-      <div>
+      <div className="bg-gradient">
         <div className="capa-site">
           <Parallax alt={title} imageSrc={image} />
         </div>
-        <div style={{ width: "90%", paddingLeft: "10%" }}>
-          <Col className="slogan center-align">
-            <div className="sub-slogan">
-              <h3>{title}</h3>
-            </div>
-            <div className="josefin-font text-about">
-              <p>{content}</p>
-            </div>
-          </Col>
-        </div>
+
+        <Col
+          offset="s2 m2 l2"
+          s={8}
+          m={8}
+          l={8}
+          className="slogan center-align"
+        >
+          <div className="josefin-font sub-slogan">
+            <h3 className="white-text text-shadown">{title}</h3>
+          </div>
+          <div className="josefin-font text-about">
+            <p className="white-text">{content}</p>
+          </div>
+        </Col>
       </div>
     )}
   </div>

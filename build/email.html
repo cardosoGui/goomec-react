@@ -2,107 +2,110 @@
 
 <head>
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Roboto");
+        @import url("https://fonts.googleapis.com/css?family=Roboto|Anton");
 
-        .img-border {
-            border-radius: 1em 1em;
+        .container-text-title {
+            text-align: center;
+            letter-spacing: 0.2em;
+        }
 
+        .container-text-content {
+            text-align: justify;
+            letter-spacing: 0.1em;
+            padding: 0em 5em;
         }
 
         .font {
-
-            font-family: "Roboto", sans-serif;
-            line-height: 2em;
+            font-family: "Anton", sans-serif;
+            line-height: 3em;
         }
 
         .div-full {
+            border-radius: 1em;
             margin-left: 20%;
-            background-image: url('https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/background.jpg?alt=media&token=9b257002-ec19-428f-b7d5-70834c2e3337');
             width: 800px;
         }
 
         .row {
             display: flex;
             justify-content: left;
-
+            text-align: justify;
         }
 
         .col {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             text-align: center;
             padding: 0em 10em;
-
-        }
-
-        .col-m {
-
-            width: 800px;
         }
 
         .footer {
             padding: 1em 3em;
             height: 8em;
-            background-color: #D50000 !important;
-            color: white;
         }
 
-        .background {
-            background-color: #f7f7f7;
-        }
+        @media screen and (max-width: 350px) {
+            h1 {
+                font-size: 0.2em;
+            }
 
-        .image-margin {
-            margin-left: 165px;
+            h2 {
+                font-size: 0.1em !important;
+            }
+
+            .container-text-content {
+                text-align: center;
+                padding: 0em 2em;
+            }
+
+            .div-full {
+                margin-left: 0%;
+                width: 100%;
+            }
+
+
         }
     </style>
 </head>
-<div class="font div-full ">
-
-    <div class="row">
-        <a href=" https://goomec.com.br"> <img src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/goomec.png?alt=media&token=ccc75545-643f-493a-9340-1fcea788047a"
-                alt="goomec plataforma de conteudo automotivo" />
-        </a>
-
-    </div>
-
-
-
-    <div class="col">
-        <h1> &nbsp; &nbsp; &nbsp;Bem vindo a Goomec</h1>
-        <h3>Monte sua oficina com Tecnologia de ponta 100% nacional. Parcele sua compras com cartão BNDES Otimize seu
-            serviço,
-            aumentando sua produtividade. Conheça a nossa linha de ferramentas de Alinhamento, Balanceamento,
+<div class="font div-full">
+    <div>
+        <div style="padding-left:20%;">
+            <img src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/goomec-lgo.png?alt=media&token=8d15a6c3-d52d-4b59-8014-b611da4c2caf"
+                alt="Logo goomec" />
+        </div>
+        <br>
+        <h1 class="container-text-title">Bem vindo a Goomec</h1>
+        <h2 class="container-text-content">Monte sua oficina com Tecnologia de ponta 100% nacional. <br>
+            Parcele sua compras usando o
+            cartão BNDES,
+            aumente sua produtividade. Conheça a nossa linha de ferramentas de Alinhamento, Balanceamento,
             Desmontadoras
-            e muito mais, clique <a href="https://goomec.com.be">Aqui</a> e acesse nosso site.</h3>
+            e muito mais, clique <a href="https://goomec.com.br">Aqui</a> e acesse nosso site.</h2>
+        <br>
+        <h2 class="container-text-content"> Nossos Vendedores irão até você ! Cobrimos todos os Estados do Brasil. </h2>
         <br>
     </div>
-    <div class="row">
-
-        <div class="row">
-            <a href="https://goomec.com.br">
-                <img class="image-margin img-border" src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/alinhador.jpg?alt=media&token=2fcc1d98-093c-47cf-82d4-61db622a4658"
-                    alt="Alinhador 3d Goomec" />
-            </a>
-        </div>
+    <div>
+        <img style=" border-radius: 1em " src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/image%201.jpg?alt=media&token=7b93e071-6ee8-4126-a921-c8d5bdbd0435"
+            alt="alinhador " height="600px " />
     </div>
     <br>
+    <div style="padding-left:25%">
+        <img style="border-radius: 1em " src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/image%202.jpg?alt=media&token=ecd019c1-0ad5-4780-b705-eed8f6c767fc"
+            alt="alinhador " height="600px " />
+    </div>
     <br>
-    <br>
-
+    <div>
+        <img style=" border-radius: 1em " src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/rampa_pantografica.jpg?alt=media&token=4907d2c2-69e7-4c6d-9224-d29d01907796"
+            alt="alinhador " height="600px " />
+    </div>
     <div class="col">
         <h3>Não deixe de conferir as novidades! acesse nosso site <a href="https://goomec.com.br">www.goomec.com.br</a></h3>
     </div>
-    <div class="footer" style="line-height: 1em">
-
-        <h4>
-            <i>
-                Tudo que você precisa esta aqui.
-            </i>
-        </h4>
-        <div>
-
-            <h2>Telefone: (11) 9 5787-7709 &nbsp; <span style="width: 5em">
+    <div class="footer container-text-content">
+        <div class="col">
+            <h2>Telefone: (11) 9 5787-7709 &nbsp; <span style="
+        width: 5em">
                     <img src="https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/whatsapp-brands.svg?alt=media&token=bca2abac-fc09-4409-aa53-a77f8f53c217"
                         width="50px" alt="whatsapp"></span> </h2>
 
