@@ -53,6 +53,24 @@
 .center-align h1 {
   font-size: 10em;
 }
+@media screen and (max-width: 768px) {
+  .sub-slogan h3 {
+    margin-top: 1em;
+    font-size: 1em;
+  }
+  .text-about {
+    font-size: 1.5em;
+  }
+  .parallax-container {
+    height: 440px;
+  }
+  .bg-gradient {
+    height: 31.5em;
+  }
+  .parallax img {
+    width: 30em;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .slogan h1 {
@@ -70,5 +88,11 @@
   }
   .parallax img {
     width: 36em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sub-slogan h3 {
+    margin-top: 1em;
+    font-size: 1.5em;
   }
 }

@@ -28,8 +28,8 @@ const Slogan = ({ title, content, image }) => (
         </div>
 
         <Col
-          offset="s2 m2 l2"
-          s={8}
+          offset="s1 m2 l2"
+          s={10}
           m={8}
           l={8}
           className="slogan center-align"
