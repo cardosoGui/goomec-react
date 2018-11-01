@@ -1,0 +1,9 @@
+{
+  "html": {
+    "snippets": {
+      "Row": "<Row></Row>",
+      "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
+      "ran": "{ Wrap plain text in curly braces }"
+    }
+  }
+}

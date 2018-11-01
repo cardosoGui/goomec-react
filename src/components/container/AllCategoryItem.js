@@ -1,10 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import CategoryItem from "../pages/products/CategoryItem";
 
 import img1 from "../../img/Cards/KMC-3D-EXPERT-1.png";
 import img2 from "../../img/Cards/KMC-3D-EXPERT-1.png";
 import img3 from "../../img/Cards/KMC-3D-EXPERT-1.png";
+import CategoriesPage from "../pages/CategoriesPage";
 
 export default class AllCategoryItem extends React.Component {
   constructor() {
@@ -23,21 +24,9 @@ export default class AllCategoryItem extends React.Component {
   render() {
     return (
       <div>
-        {Object.keys(this.state.alinhadores.categories).map((item, i) => {
-          return (
-            <span key={i}>
-              <CategoryItem
-                img={this.state.categories[item].img}
-                title={this.state.categories[item].title}
-              />
-            </span>
-          );
-        })}
+        <h1>categoria</h1>
+        <CategoriesPage itensArray={this.state.alinhadores.categories} />
       </div>
     );
   }
 }
-
-AllCategoryItem.PropTypes = {
-  type: PropTypes.string
-};
