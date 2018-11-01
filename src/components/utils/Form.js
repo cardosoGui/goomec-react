@@ -3,7 +3,7 @@ import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import axios from "axios";
 import checkboxes from "../utils/checkboxes";
-import Checkbox from "../utils/Checkbox";
+import CheckBox from "../utils/CheckBox";
 
 class Form extends React.Component {
   constructor() {
@@ -127,7 +127,7 @@ class Form extends React.Component {
                 <Col s={12} m={10} l={10}>
                   {checkboxes.map(item => (
                     <div key={item.key}>
-                      <Checkbox
+                      <CheckBox
                         name={item.name}
                         checked={this.state.checkedItems.get(item.name)}
                         onChange={this.handleChange}
@@ -151,7 +151,7 @@ class Form extends React.Component {
             )}
             <Col className="center-align" s={12} m={12}>
               <br />
-              <br />{" "}
+              <br />
               <Button className="blue" large type="submit">
                 Enviar
               </Button>

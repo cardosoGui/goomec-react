@@ -7,6 +7,7 @@ import ReactGA from "react-ga";
 
 import "../../css/ProductsPage.css";
 
+
 // Images
 import carClassic from "../../img/Background/car-classic.jpg";
 
@@ -20,6 +21,12 @@ import acessorios from "../../img/Products/Acessorios/01_kmc_acessorio/kmc_acess
 import linhaPesada from "../../img/Products/Linha_Pesada/01_kmc_3090_truck/kmc_3090_Truck.jpg";
 
 class ProductsPage extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      
+    }
+  }
   render() {
     ReactGA.pageview("/produtos");
 
