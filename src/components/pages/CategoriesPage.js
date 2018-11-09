@@ -8,7 +8,7 @@ export default class CategoriesPage extends React.Component {
     return (
       <div>
         <Row>
-          <Col offset="" s={10} m={12} l={12}>
+          <Col offset="" s={10} m={11} l={11}>
             <CategoryItem itens={this.props.itensArray} />
           </Col>
         </Row>

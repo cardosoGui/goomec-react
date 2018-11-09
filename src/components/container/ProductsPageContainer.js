@@ -1,150 +1,104 @@
+/* eslint-disable*/
 import React from "react";
+import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
+import ProductItem from "../pages/products/ProductItem";
 
-import { Row, Col, Tabs, Tab, Modal, Button } from "react-materialize";
+import kmcExpert from "../../img/Cards/KMC-3D-EXPERT-1.png";
+import kmcEfficient from "../../img/Cards/KMC-3D-EFFICIENT-1.png";
+import kmcCompact from "../../img/Cards/KMC-3D-COMPACT-1.png";
 
-//Thunbnails
-import alinhadores from "../../img/Products/Alinhadores/01_kmc_3d_expert/kmc_3d_alinhador_expert_thumb.png";
-import rampas from "../../img/Products/Rampas/01_kmc_rampas_10p/kmc_rampa_10p.jpg";
-import baseAlinhamento from "../../img/Products/Base_Alinhamento/01_kmc_base_18p/kmc_base_view.jpg";
-import elevadores from "../../img/Products/Elevadores/01_kmc_elev_r4500s/kmc_elevador_r4500s.jpg";
-import balanceadoras from "../../img/Products/Balanceadoras/01_kmc_balanceadora_2070/kmc_balanceadora_2070.jpg";
-import desmontadoras from "../../img/Products/Desmontadoras/01_kmc_desm_1500/kmc_1500.jpg";
-import acessorios from "../../img/Products/Acessorios/01_kmc_acessorio/kmc_acessorio.jpg";
-import linhaPesada from "../../img/Products/Linha_Pesada/01_kmc_3090_truck/kmc_3090_Truck.jpg";
+import kmc8000 from "../../img/Cards/KMC-CCD-8000-1.png";
+import kmc6000 from "../../img/Cards/KMC-CCD-6000-1.png";
+import kmc4000 from "../../img/Cards/KMC-CCD-4000-1.png";
 
-//Alinhadores
-import kmc3D from "../../img/Cards/KMC-3D-EXPERT-1.png";
-import kmcCCD from "../../img/Cards/KMC-CCD-4000-1.png";
-import kmcFLEX from "../../img/Cards/KMC-FLEX-FULL-1.png";
-
-//Rampas
-import rampaHidraulica from "../../img/Cards/KMC-RAMPA-10P.png";
-import rampaPneumatica from "../../img/Cards/KMC-RAMPA-20-HD.png";
-
-//Elevadores
-import elevadorEletroMecanico from "../../img/Cards/KMC-R4000-ER.png";
-import elevadorPneumatico from "../../img/Cards/KMC-RAMPA-10P.png";
+import kmcFlexFull from "../../img/Cards/KMC-FLEX-FULL-1.png";
+import kmcFlexStd from "../../img/Cards/KMC-FLEX-STD-1.png";
 
 export default class ProductsPageContainer extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      alinhadores: {
-        categories: [
-          { title: "KMC 3D", img: kmc3D },
-          { title: "KMC CCD", img: kmcCCD },
-          { title: "KMC FLEX", img: kmcFLEX }
-        ]
-      },
-      rampas: {
-        categories: [
-          { title: "Rampas Hidráulicas", img: rampaHidraulica },
-          { title: "Rampas Pneumáticas", img: rampaPneumatica }
-        ]
-      },
-      elevadores: {
-        categories: [
-          { title: "Elevadores Eletromecânicos", img: elevadorEletroMecanico },
-          { title: "Elevadores Hidráulicos", img: elevadorPneumatico }
-        ]
-      }
+      kmc3d: [
+        {
+          title: "KMC 3D EXPERT",
+          img: kmcExpert,
+          content:
+            "Toda a tecnologia dos alinhadores 3D KMC pelo melhor preço! O alinhador KMC 3D Compact é ideal para instalação em locais com pouco espaço como valetas."
+        },
+        {
+          title: "KMC 3D EFFICIENT",
+          img: kmcEfficient,
+          content:
+            "Desenvolvido no Brasil, com tecnologia e mão de obra 100% nacionais, o alinhador KMC 3D Efficient é o modelo ideal para você que precisa de uma máquina completa e com excelente custo benefício."
+        },
+        {
+          title: "KMC 3D COMPACT",
+          img: kmcCompact,
+          content:
+            "Toda a tecnologia dos alinhadores 3D KMC pelo melhor preço! O alinhador KMC 3D Compact é ideal para instalação em locais com pouco espaço como valetas."
+        }
+      ],
+      kmcccd: [
+        {
+          title: "KMC CCD 8000 WIRELESS",
+          img: kmc8000,
+          content:
+            "8 sensores CCD iRed de alta resolução, 4 Cabeças de medição, tecnologia WLAN 2.4 GHz, Função ZOOM, Checklist, ajuste com rodas elevadas e informática completa fazem do KMC 8000 WIRELESS o melhor alinhador computadorizado do mercado."
+        },
+        {
+          title: "KMC CCD 6000 WIRELESS",
+          img: kmc6000,
+          content:
+            "Leitura de todos os parâmetros em tempo real, comunicação simultânea entre os sensores tornando a operação muito mais rápida e intuitiva.6 sensores CCD iRed de alta resolução, 4 cabeças de medição, tecnologia WLAN 2.4 GHz, Função ZOOM, Checklist, ajuste com rodas elevadas e informática completa. KMC 6000, o melhor custo x benefício do mercado em alinhadores computadorizados."
+        },
+        {
+          title: "KMC CCD 4000 WIRELESS",
+          img: kmc4000,
+          content:
+            "4 sensores CCD iRed de alta resolução, 2 cabeças de medição, Função ZOOM, Checklist, ajuste com rodas elevadas e informática completa. Permite UPGRADE para as linhas KMC 6000 e KMC 8000"
+        }
+      ],
+      kmcflex: [
+        {
+          title: "KMC DEFINITY FLEX II FULL",
+          img: kmcFlexFull,
+          content:
+            "O primeiro e único alinhador FLEX do Brasil, equipamento de alinhamento híbrido (computadorizado e digital) para a medição de ambos os eixos (dianteiro e traseiro). Facilidade de uso com ou sem computador."
+        },
+        {
+          title: "KMC DEFINITY FLEX II STD",
+          img: kmcFlexStd,
+          content:
+            "O primeiro e único alinhador FLEX do Brasil, equipamento de alinhamento híbrido (computadorizado e digital) para a medição de ambos os eixos (dianteiro e traseiro). Facilidade de uso com ou sem computador."
+        },
+        {
+          title: "KMC 18P FLEX",
+          img: kmcFlexStd,
+          content:
+            "Com o 18P FLEX, você pode alinhar veículos diretamente em um elevador automotivo. Solução ideal para oficinas mecânicas, com fácil manuseio otimiza espaço e processo de alinhamento."
+        }
+      ]
     };
   }
+
   render() {
+    const { id } = this.props.match.params;
     return (
-      <Row>
-        <Col s={10} m={12} l={12}>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
+      <div>
+        <Row>
+          <Col offset="" s={12} m={12} l={12}>
+            <h1>{id}</h1>
+            {id === "KMC 3D" ? <ProductItem itens={this.state.kmc3d} /> : ""}
+            {id === "KMC CCD" ? <ProductItem itens={this.state.kmcccd} /> : ""}
+            {id === "KMC FLEX" ? (
+              <ProductItem itens={this.state.kmcflex} />
+            ) : (
+              ""
+            )}
           </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-          <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
-            <img
-              className="thumbnail "
-              src={alinhadores}
-              alt="kmc_3d_alinhadores"
-            />
-            <Col s={12} m={12} l={12}>
-              <br />
-              <Button large>Alinhadores</Button>
-            </Col>
-          </Col>
-        </Col>
-      </Row>
+        </Row>
+      </div>
     );
   }
 }

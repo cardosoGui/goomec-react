@@ -1,5 +1,13 @@
 import React from "react";
-import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
+import {
+  Col,
+  Row,
+  Button,
+  Input,
+  Preloader,
+  Icon,
+  Modal
+} from "react-materialize";
 import PropTypes from "prop-types";
 
 class CardItem extends React.Component {
@@ -12,19 +20,24 @@ class CardItem extends React.Component {
       <div className="card">
         <div className="card-image">
           <img src={this.props.image} alt={this.props.title} />
-          <span className="card-title">
-            <h2 style={{ color: "#000" }}>{this.props.title}</h2>
-          </span>
-          <a className="btn-floating halfway-fab waves-effect waves-light red">
-            <i className="material-icons">add</i>
-          </a>
+
+          <Modal
+            header="Alinhadores"
+            fixedFooter
+            trigger={
+              <a className="btn-floating halfway-fab waves-effect waves-light red">
+                <i className="material-icons">add</i>
+              </a>
+            }
+          >
+            Aqui e um modal
+          </Modal>
         </div>
         <div className="card-content">
-          <p>
-            I am a very simple card. I am good at containing small bits of
-            information. I am convenient because I require little markup to use
-            effectively.
-          </p>
+          <span className="card-title">
+            <h5 style={{ color: "#000" }}>{this.props.title}</h5>
+          </span>
+          <p>{this.props.content}</p>
         </div>
       </div>
     );
@@ -33,7 +46,7 @@ class CardItem extends React.Component {
 
 CardItem.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  content: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React from "react";
 import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
 import CardItem from "../../utils/CardItem";
@@ -8,15 +9,20 @@ export default class ProductItem extends React.Component {
   render() {
     return (
       <div>
-        <Col offset="" s={10} m={3} l={3}>
-          <CardItem image={this.props.img} title={this.props.title} />
-        </Col>
+        {Object.keys(this.props.itens).map((item, i) => (
+          <Col key={i} offset="" s={10} m={3} l={3}>
+            <CardItem
+              image={this.props.itens[item].img}
+              title={this.props.itens[item].title}
+              content={this.props.itens[item].content}
+            />
+          </Col>
+        ))}
       </div>
     );
   }
 }
 
 ProductItem.propTypes = {
-  title: PropTypes.any,
-  img: PropTypes.any
+  itens: PropTypes.array
 };
