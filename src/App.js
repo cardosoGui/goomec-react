@@ -15,14 +15,21 @@ import NavBar from "./components/header/NavBar";
 import FooterComponent from "./components/footer/FooterComponent";
 
 import AllCategoryItem from "./components/container/AllCategoryItem";
-import ProductsPageContainer from "./components/container/ProductsPageContainer";
+// import ProductsPageContainer from "./components/container/ProductsPageContainer";
+import CategoriesPageContainer from "./components/container/CategoriesPageContainer";
 
 const App = () => (
   <div>
     <NavBar />
     <Route path="/" exact component={HomePage} />
     <Route path="/todos-produtos" exact component={AllProductsContainer} />
-    <Route path="/todos-categorias" exact component={ProductsPageContainer} />
+    <Route path="/todos-produtos/:id" exact component={AllProductsContainer} />
+    <Route path="/todos-categorias" exact component={CategoriesPageContainer} />
+    <Route
+      path="/todos-categorias/:id"
+      exact
+      component={CategoriesPageContainer}
+    />
 
     <Route path="/produtos" exact component={ProductsPage} />
     <Route path="/dicas-e-artigos" exact component={TipsPage} />

@@ -45,7 +45,7 @@ export default class ProductsPageContainer extends React.Component {
       },
       elevadores: {
         categories: [
-          { title: "Elevadores Eletromecãnicos", img: elevadorEletroMecanico },
+          { title: "Elevadores Eletromecânicos", img: elevadorEletroMecanico },
           { title: "Elevadores Hidráulicos", img: elevadorPneumatico }
         ]
       }
@@ -76,7 +76,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "
@@ -87,7 +87,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "
@@ -98,7 +98,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "
@@ -109,7 +109,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "
@@ -120,7 +120,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "
@@ -131,7 +131,7 @@ export default class ProductsPageContainer extends React.Component {
               <br />
               <Button large>Alinhadores</Button>
             </Col>
-          </Col>{" "}
+          </Col>
           <Col offset="s2 m2 l1" s={10} m={3} l={2} className="center-item">
             <img
               className="thumbnail "

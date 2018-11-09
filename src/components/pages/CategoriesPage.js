@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Tabs, Tab, Modal, Button } from "react-materialize";
+import { Row, Col } from "react-materialize";
 import CategoryItem from "./products/CategoryItem";
 import PropTypes from "prop-types";
 

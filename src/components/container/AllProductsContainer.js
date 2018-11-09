@@ -20,10 +20,12 @@ export default class AllProductsContainer extends React.Component {
   }
 
   render() {
+    const { id } = this.props.match.params;
     return (
       <div>
         <Row>
           <Col offset="" s={12} m={12} l={12}>
+            <h1>{id}</h1>
             <Row>
               {Object.keys(this.state.categories).map((item, i) => {
                 return (
