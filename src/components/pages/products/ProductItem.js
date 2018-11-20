@@ -10,11 +10,12 @@ export default class ProductItem extends React.Component {
     return (
       <div>
         {Object.keys(this.props.itens).map((item, i) => (
-          <Col key={i} offset="" s={10} m={3} l={3}>
+          <Col key={i} offset="s1 " s={10} m={4} l={3}>
             <CardItem
               image={this.props.itens[item].img}
               title={this.props.itens[item].title}
               content={this.props.itens[item].content}
+              modal={this.props.itens[item].modal}
             />
           </Col>
         ))}

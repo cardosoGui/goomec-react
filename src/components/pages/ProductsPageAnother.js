@@ -1,8 +1,8 @@
 /* eslint-disable*/
 import React from "react";
 
-import { Row, Col, Tabs, Tab, Modal, Button } from "react-materialize";
-import { Link } from "react-router-dom";
+import { Row, Col, Button } from "react-materialize";
+import ReactGA from "react-ga";
 
 // Thunbnails
 import alinhadores from "../../img/Products/Alinhadores/01_kmc_3d_expert/kmc_3d_alinhador_expert_thumb.png";
@@ -14,20 +14,21 @@ import desmontadoras from "../../img/Products/Desmontadoras/01_kmc_desm_1500/kmc
 import acessorios from "../../img/Products/Acessorios/01_kmc_acessorio/kmc_acessorio.jpg";
 import linhaPesada from "../../img/Products/Linha_Pesada/01_kmc_3090_truck/kmc_3090_Truck.jpg";
 
-// Alinhadores
-import kmc3D from "../../img/Cards/KMC-3D-EXPERT-1.png";
-import kmcCCD from "../../img/Cards/KMC-CCD-4000-1.png";
-import kmcFLEX from "../../img/Cards/KMC-FLEX-FULL-1.png";
-
-// Rampas
-import rampaHidraulica from "../../img/Cards/KMC-RAMPA-10P.png";
-import rampaPneumatica from "../../img/Cards/KMC-RAMPA-20-HD.png";
-
-// Elevadores
-import elevadorEletroMecanico from "../../img/Cards/KMC-R4000-ER.png";
-import elevadorPneumatico from "../../img/Cards/KMC-RAMPA-10P.png";
+import "../../css/ProductsPage.css";
 
 export default class ProductsPageAnother extends React.Component {
+  constructor() {
+    super();
+
+    ReactGA.pageview("/produtos");
+  }
+
+  handleEvent(action) {
+    ReactGA.event({
+      category: "Entrando no site",
+      action: `Clicou no botão ${action}, pela HomePage`
+    });
+  }
   render() {
     return (
       <Row>
@@ -43,11 +44,17 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Link to="/todos-categorias/alinhadores">
-                <Button className="blue" large>
-                  Alinhadores
-                </Button>
-              </Link>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Alinhadores");
+                }}
+                href="/todos-categorias/alinhadores"
+              >
+                Alinhadores
+              </Button>
             </div>
           </Col>
           <Col s={10} m={3} l={3}>
@@ -57,11 +64,17 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Link to="/todos-categorias/rampas">
-                <Button className="blue" large>
-                  Rampas
-                </Button>
-              </Link>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Rampas");
+                }}
+                href="/todos-categorias/rampas"
+              >
+                Rampas
+              </Button>
             </div>
           </Col>
           <Col s={10} m={3} l={3}>
@@ -75,11 +88,19 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Base de Alinhamento");
+                }}
+                href="/todos-produtos/Base-Alinhamento"
+              >
                 Base De Alinhamento
               </Button>
             </div>
-          </Col>{" "}
+          </Col>
           <Col s={10} m={3} l={3}>
             <br />
             <div className="align-item-flex">
@@ -91,7 +112,15 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Elevadores");
+                }}
+                href="/todos-categorias/elevadores"
+              >
                 Elevadores
               </Button>
             </div>
@@ -107,7 +136,15 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Balanceadoras");
+                }}
+                href="/todos-produtos/Balanceadoras"
+              >
                 Balanceadoras
               </Button>
             </div>
@@ -123,11 +160,19 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Desmontadoras");
+                }}
+                href="/todos-produtos/Desmontadoras"
+              >
                 Desmontadoras
               </Button>
             </div>
-          </Col>{" "}
+          </Col>
           <Col s={10} m={3} l={3}>
             <br />
             <div className="align-item-flex">
@@ -139,11 +184,19 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Acessórios");
+                }}
+                href="/todos-produtos/Acessórios"
+              >
                 Acessórios
               </Button>
             </div>
-          </Col>{" "}
+          </Col>
           <Col s={10} m={3} l={3}>
             <br />
             <div className="align-item-flex">
@@ -155,11 +208,19 @@ export default class ProductsPageAnother extends React.Component {
             </div>
             <br />
             <div className="align-item-flex">
-              <Button className="blue" large>
+              <Button
+                className="blue"
+                large
+                node="a"
+                onClick={() => {
+                  this.handleEvent("Linha Pesada");
+                }}
+                href="todos-categorias/linha-pesada"
+              >
                 Linha Pesada
               </Button>
             </div>
-          </Col>{" "}
+          </Col>
         </Col>
       </Row>
     );

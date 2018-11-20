@@ -35,143 +35,157 @@
 
 /* Alinhadores */
 .kmc-3d-expert-view {
-  background-image: url("../img/Products/images/kmc_3d_expert.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3d_expert.jpg?alt=media&token=c95d762b-9104-468f-8295-6b84690768cc");
 }
 .kmc-3d-efficient-view {
-  background-image: url("../img/Products/images/kmc_3d_efficient.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3d_efficient.jpg?alt=media&token=9dd4f1d3-55c5-4bed-906e-96cd029b1b11");
 }
 .kmc-3d-compact-view {
-  background-image: url("../img/Products/images/kmc_3d_compact.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3d_compact.jpg?alt=media&token=d719ae72-d744-4515-946b-d6ba3e7de2b3");
 }
+
+.kmc-8000-wifi-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_8000_wifi.jpg?alt=media&token=8669c654-65d4-4b9c-88b0-173810d6d2d7");
+}
+.kmc-6000-wifi-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_6000_wifi.jpg?alt=media&token=6410d86c-e410-4bdd-958d-4541d2abae55");
+}
+.kmc-4000-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_4000.jpg?alt=media&token=896ff33f-b813-4504-96a6-e244f093b59b");
+}
+
 .kmc-flex-full-view {
-  background-image: url("../img/Products/images/kmc_flex_full.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_flex_full.jpg?alt=media&token=582dbe3a-9b1b-49dc-a3b9-0a93aba7db4d");
 }
 .kmc-flex-pesada-view {
-  background-image: url("../img/Products/images/kmc_flex_pesada.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_flex_pesada.jpg?alt=media&token=5f8fe03e-da35-4b15-82ac-a829f288a74e");
 }
 .kmc-flex-standard-view {
-  background-image: url("../img/Products/images/kmc_flex_standard.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_flex_standard.jpg?alt=media&token=725431e1-20e6-40d5-9d67-0059245b894b");
 }
 .kmc-flex-std-pesada-view {
-  background-image: url("../img/Products/images/kmc_flex_std_pesada.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_flex_std_pesada.jpg?alt=media&token=e7344962-ae8c-48e8-8805-ab9125d73ff1");
 }
 .kmc-flex-pesada-sem-carreta-view {
-  background-image: url("../img/Products/images/kmc_flex_pesada_sem_carreta.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_flex_pesada_sem_carreta.jpg?alt=media&token=70e58336-19bf-48f4-9cd2-630454b2c6e4");
+}
+.kmc-18p-flex-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_18p_flex.jpg?alt=media&token=710cc4a7-dff9-471f-a961-ed7b9378347e");
 }
 
 /* Rampas */
 .kmc-hd-view {
-  background-image: url("../img/Products/images/kmc_hd.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_hd.jpg?alt=media&token=f5db372d-4ec4-450c-a248-d22c35277e23");
 }
 .kmc-10p-view {
-  background-image: url("../img/Products/images/kmc_10p.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_10p.jpg?alt=media&token=ae9c84ea-bb34-447c-979e-e85dcf538395");
 }
 .kmc-12p-view {
-  background-image: url("../img/Products/images/kmc_12p_eb.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_12p_eb.jpg?alt=media&token=a6cda26d-58bc-440d-9949-436b229aac87");
 }
 
 .kmc-13p-view {
-  background-image: url("../img/Products/images/kmc_13p.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_13p.jpg?alt=media&token=f190db2d-2731-4325-b5eb-91249e3715fc");
 }
 .kmc-20hd-view {
-  background-image: url("../img/Products/images/kmc_20hd.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_20hd.jpg?alt=media&token=16093622-2f81-4ca9-835a-4798a90caae6");
 }
 /* Base de Alinhamento */
 
 .kmc-18p-view {
-  background-image: url("../img/Products/images/kmc_18p.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_18p.jpg?alt=media&token=7d8a01ce-e679-4768-81fe-a9714f206df1");
 }
-.kmc-18p-flex-view {
-  background-image: url("../img/Products/images/kmc_18p_flex.jpg");
-}
+
 /* Elevadores  */
 .kmc-r-4000s-view {
-  background-image: url("../img/Products/images/kmc_r4000s.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r4000s.jpg?alt=media&token=de43fa29-b6b7-44cd-b01e-7a6e040e70ca");
 }
 .kmc-r-4000-view {
-  background-image: url("../img/Products/images/kmc_r4000.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r4000.jpg?alt=media&token=0921c901-e916-41f8-8bce-d5282e8f0d98");
 }
 .kmc-r-4000d-view {
-  background-image: url("../img/Products/images/kmc_r4000d.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r4000d.jpg?alt=media&token=c1ab1a7a-8415-4cef-83e7-4be3ec367277");
 }
 .kmc-r-4000e-view {
-  background-image: url("../img/Products/images/kmc_r4000e.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r4000e.jpg?alt=media&token=80fd9ac2-dfd5-4bda-b444-743d0cdbc716");
 }
 .kmc-r-4000p-view {
-  background-image: url("../img/Products/images/kmc_r4000p.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r4000p.jpg?alt=media&token=43b33509-2461-410c-b48d-cc2119067e09");
 }
 .kmc-r-2500-view {
-  background-image: url("../img/Products/images/kmc_r2500.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r2500.jpg?alt=media&token=4bd560db-3d7f-40fd-abec-93d9d95f7df1");
+}
+
+.kmc-r-3500-ts-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r3500ts.jpg?alt=media&token=0712ea08-fc78-41f4-8c2d-1c530696e6f0");
+}
+.kmc-r-3500-te-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r3500te.jpg?alt=media&token=4448f256-4989-430c-a19b-2c6b5d716b40");
 }
 .kmc-r-3000d-view {
-  background-image: url("../img/Products/images/kmc_r3000d.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_r3000d.jpg?alt=media&token=fa5fb150-4c2c-4729-bc61-48615db68f45");
 }
+.kmc-r-3030-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3030pm.jpg?alt=media&token=f69beddd-947c-4ebf-a281-0b6c485fe4c4");
+}
+
 /* Balanceadoras */
 
 .kmc-9000-r-view {
-  background-image: url("../img/Products/images/kmc_9000r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_9000r.jpg?alt=media&token=244a78d1-e0dd-4eba-8c7f-65b42c8e77dd");
 }
 .kmc-2100-r-view {
-  background-image: url("../img/Products/images/kmc_2100r.jpg");
-}
-.kmc-2100-r-ultra-view {
-  background-image: url("../img/Products/images/kmc_2100r_ultra.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_2100r.jpg?alt=media&token=3619d33b-952c-4d07-93a7-170448001708");
 }
 
 .kmc-1800-r-view {
-  background-image: url("../img/Products/images/kmc_1800r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_1800r.jpg?alt=media&token=11065b53-b8af-4572-bef4-a0d1460111c7");
 }
-.kmc-18p-view {
-  background-image: url("../img/Products/images/kmc_18p.jpg");
-}
-.kmc-18p-flex-view {
-  background-image: url("../img/Products/images/kmc_18p_flex.jpg");
-}
+
 .kmc-3000-r-view {
-  background-image: url("../img/Products/images/kmc_3000r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3000r.jpg?alt=media&token=4c7b3f6f-518e-4a0e-9160-90c6b1e23bb8");
 }
 /* Desmontadoras */
 .kmc-r-1500-view {
-  background-image: url("../img/Products/images/kmc_1500r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_1500r.jpg?alt=media&token=0ebeb20d-1485-4154-81ee-1e3621650a73");
 }
 .kmc-r-1500-ultra-view {
-  background-image: url("../img/Products/images/kmc_1500r_ultra.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_1500r_ultra.jpg?alt=media&token=17fce5ac-1c72-4e0d-97c0-13a8412c5650");
 }
 .kmc-r-906-view {
-  background-image: url("../img/Products/images/kmc_906r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_906r.jpg?alt=media&token=a6990d71-8e6d-4798-ad77-a01d659b39ac");
 }
 .kmc-r-960-view {
-  background-image: url("../img/Products/images/kmc_960r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_960r.jpg?alt=media&token=2e34a996-4aa9-444d-bd42-936e9bec9bcb");
 }
 .kmc-r-1200-view {
-  background-image: url("../img/Products/images/kmc_1200r.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_1200r.jpg?alt=media&token=5f249e70-4018-47c7-8810-b8482ce2fc24");
 }
 .kmc-r-2100-view {
-  background-image: url("../img/Products/images/kmc_2100r_ultra.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_2100r_ultra.jpg?alt=media&token=5233219c-3a33-425a-b7fe-2b44ec58245b");
 }
-.kmc-pm-3030-view {
-  background-image: url("../img/Products/images/kmc_3030pm.jpg");
-}
+
+/* pesada */
 .kmc-r-4050-view {
-  background-image: url("../img/Products/images/kmc_4050r.jpg");
-}
-.kmc-r-6000-view {
-  background-image: url("../img/Products/images/kmc_6000_wifi.jpg");
-}
-.kmc-r-8000-view {
-  background-image: url("../img/Products/images/kmc_8000_wifi.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_4050r.jpg?alt=media&token=df252407-68f5-40b4-99dc-886da558c3d1");
 }
 
 /* Acessórios */
-.kmc-acessorio-view {
-  background-image: url("../img/Products/images/kmc_acs_valeta.jpg");
+.kmc-acessorio-pratos-dianteiro-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_pratos_diateiros.jpg?alt=media&token=943d1820-cb09-4f62-b257-1b6c653b811b");
+}
+.kmc-acessorio-pratos-traseiro-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_pratos_traseiros.jpg?alt=media&token=3b2b0453-18dd-4f7a-8028-df85de7937f7");
 }
 .kmc-macaoo-pneumatico-view {
-  background-image: url("../img/Products/images/kmc_macaco_pneumatico.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_macaco_pneumatico.jpg?alt=media&token=7edce1db-e812-4bee-97b2-19450e99b17b");
 }
 /* Linha Pesada */
 .kmc-3090-truck-view {
-  background-image: url("../img/Products/images/kmc_3090_pesada.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3090_pesada.jpg?alt=media&token=e40f2fd5-9e93-4135-9550-280effa1c651");
+}
+.kmc-3900-truck-view {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/goomec-cdaf3.appspot.com/o/images%2Fkmc_3900t.jpg?alt=media&token=c77a7b88-cfe4-4b96-b326-5ac19b75f006");
 }
 .categories-content {
   display: flex;
@@ -233,9 +247,7 @@
     text-align: justify;
     font-size: 1em;
   }
-  /* .no-repeat-background {
-    background-size: 230px;
-  } */
+
   .btn {
     font-size: smaller;
   }

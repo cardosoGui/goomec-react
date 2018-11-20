@@ -10,7 +10,6 @@ import {
 import { Link } from "react-router-dom";
 
 import "../../css/NavBar.css";
-import logo from "../../img/Logo/goomec_logo_icon.png";
 
 const NavBar = () => (
   <div>

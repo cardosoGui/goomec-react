@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 export default class CategoryItem extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ paddingTop: "2em" }}>
         {Object.keys(this.props.itens).map((item, i) => {
           return (
-            <Col key={i} className="item" offset="m1 l1" s={10} m={3} l={3}>
-              <Link to={`/todos-produtos/${this.props.itens[item].title}`}>
+            <Col key={i} className="item" offset="s1 m1 l1" s={10} m={3} l={3}>
+              <a href={`/todos-produtos/${this.props.itens[item].title}`}>
                 <img
                   className="thumbnail"
                   src={this.props.itens[item].img}
@@ -19,7 +19,7 @@ export default class CategoryItem extends React.Component {
                 />
 
                 <h4 className="center-align">{this.props.itens[item].title}</h4>
-              </Link>
+              </a>
             </Col>
           );
         })}
