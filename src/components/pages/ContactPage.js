@@ -25,21 +25,24 @@ class ContactPage extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const { id } = this.props.match.params;
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
+    console.log(id);
 
     if ((name && email && message && phone) !== "") {
       axios(
         {
           method: "POST",
           url:
-            "https://us-central1-pwa-experiment-eb2bd.cloudfunctions.net/enviarEmail",
+            "https://us-central1-goomec-cdaf3.cloudfunctions.net/enviarEmail",
           data: {
             name: name,
             email: email,
             phone: phone,
+            product: `${id}`,
             message: message
           }
         },
@@ -68,6 +71,7 @@ class ContactPage extends React.Component {
     window.Materialize.toast("Enviando menssagem", 5000);
   };
   render() {
+    const { id } = this.props.match.params;
     ReactGA.pageview("/contato");
     return (
       <div className="josefin-font">
@@ -82,6 +86,7 @@ class ContactPage extends React.Component {
           >
             <Col className="center-align" offset="s2 m4" s={8} m={4}>
               <h3>Contato</h3>
+              {id ? <h4>Produto: {id}</h4> : ""}
             </Col>
             <Col offset="s1 m3">
               <Input

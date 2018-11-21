@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from "react";
-import { Modal, Col } from "react-materialize";
+import { Modal, Col, Button, Icon } from "react-materialize";
 import PropTypes from "prop-types";
 import ReactGA from "react-ga";
 
@@ -39,6 +40,18 @@ class CardItem extends React.Component {
             }
           >
             <Col s={12} m={12} l={12}>
+              <Col s={8} m={5} l={5}>
+                <Button
+                  large
+                  node="a"
+                  href={`/contato/${this.props.title}`}
+                  className="button-market red"
+                  waves="light"
+                >
+                  Orçamento
+                  <Icon right>add_shopping_cart</Icon>
+                </Button>
+              </Col>
               <div
                 className={`products ${
                   this.props.modal
