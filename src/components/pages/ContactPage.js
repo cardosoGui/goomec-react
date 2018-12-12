@@ -30,7 +30,6 @@ class ContactPage extends React.Component {
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
-    console.log(id);
 
     if ((name && email && message && phone) !== "") {
       axios(
@@ -39,17 +38,15 @@ class ContactPage extends React.Component {
           url:
             "https://us-central1-goomec-cdaf3.cloudfunctions.net/enviarEmail",
           data: {
-            name: name,
-            email: email,
-            phone: phone,
+            name,
+            email,
+            phone,
             product: `${id}`,
-            message: message
+            message
           }
         },
         this.setState({ loading: true })
       ).then(response => {
-        console.log(response);
-
         if (response.data === "success") {
           this.setState({ loading: false });
           window.Materialize.toast(

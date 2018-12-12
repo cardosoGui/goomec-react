@@ -21,7 +21,12 @@ class CardItem extends React.Component {
     return (
       <div className="card">
         <div className="card-image">
-          <img src={this.props.image} alt={this.props.title} />
+          <img
+            className="materialboxed"
+            src={this.props.image}
+            alt={this.props.title}
+            data-caption={this.props.title}
+          />
 
           <Modal
             header={this.props.title}

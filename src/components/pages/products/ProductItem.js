@@ -1,6 +1,6 @@
 /* eslint-disable*/
 import React from "react";
-import { Col, Row, Button, Input, Preloader, Icon } from "react-materialize";
+import { Col } from "react-materialize";
 import CardItem from "../../utils/CardItem";
 
 import PropTypes from "prop-types";

@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/KMC-CCD-8000-1.3f70b42f.png"
   },
   {
-    "revision": "04a035a192cc1d2e67ce",
+    "revision": "73c93ea3ce18256621d9",
     "url": "/static/css/main.8e332918.chunk.css"
   },
   {
@@ -132,8 +132,8 @@ self.__precacheManifest = [
     "url": "/static/media/KMC-3D-COMPACT-1.4545256c.png"
   },
   {
-    "revision": "04a035a192cc1d2e67ce",
-    "url": "/static/js/main.04a035a1.chunk.js"
+    "revision": "73c93ea3ce18256621d9",
+    "url": "/static/js/main.73c93ea3.chunk.js"
   },
   {
     "revision": "2a669be7e2b594f7083fc4e4ecc177b2",
@@ -264,7 +264,7 @@ self.__precacheManifest = [
     "url": "/static/media/selo_qualidade.89048c39.png"
   },
   {
-    "revision": "5d109e71f62c4737c7a3a90d47ca53cc",
+    "revision": "f4a0d061942a9f2ed0c1257df06941a7",
     "url": "/index.html"
   }
 ];

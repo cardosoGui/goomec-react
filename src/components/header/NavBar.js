@@ -14,13 +14,13 @@ import "../../css/NavBar.css";
 const NavBar = () => (
   <div>
     <Navbar className="navbar-color" fixed right>
-      <NavItem node="a" href="/">
+      <NavItem node="a" href="/#home">
         Home
       </NavItem>
       <NavItem node="a" href="/nossa-historia">
         Nossa História
       </NavItem>
-      <NavItem node="a" href="/produtos">
+      <NavItem node="a" href="/#produtos">
         Produtos
       </NavItem>
       {/* <NavItem node="a" href="/dicas-e-artigos">
